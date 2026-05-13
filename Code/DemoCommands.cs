@@ -1,0 +1,97 @@
+﻿using SWB.Player;
+
+namespace SWB.Demo;
+
+internal class DemoCommands
+{
+	[ConCmd( "kill", Help = "Kills the player" )]
+	public static void Kill()
+	{
+		var player = PlayerBase.Local;
+		var suicideDamageInfo = new Shared.DamageInfo
+		{
+			Attacker = player?.GameObject ?? null,
+			Inflictor = null,
+			Damage = 99999,
+		};
+		player?.TakeDamage( suicideDamageInfo );
+	}
+
+	[ConCmd( "thirdperson", Help = "Toggles thirdperson" )]
+	public static void Thirdperson()
+	{
+		var player = PlayerBase.Local;
+		var cam = player.CameraMovement as CameraMovement;
+		cam.Distance = cam.Distance > 0 ? 0 : 60;
+	}
+
+	[ConCmd( "thirdperson_shoulder", Help = "Switches thirdperson shoulder" )]
+	public static void ThirdpersonShoulder()
+	{
+		var player = PlayerBase.Local;
+		var cam = player.CameraMovement as CameraMovement;
+		cam.ShoulderOffset = -cam.ShoulderOffset;
+	}
+
+	[ConCmd( "respawn", Help = "Respawns the player (host only)" )]
+	public static void Respawn()
+	{
+		var player = PlayerBase.Local;
+		if ( !player.IsHost ) return;
+		player?.Respawn();
+	}
+
+	[ConCmd( "god", Help = "Toggles godmode (host only)" )]
+	public static void GodMode()
+	{
+		var player = PlayerBase.Local;
+		if ( !player.IsHost ) return;
+		player.GodMode = !player.GodMode;
+		Log.Info( (player.GodMode ? "Enabled" : "Disabled") + " Godmode" );
+	}
+
+	[ConCmd( "noclip", Help = "Toggles noclip (host only)" )]
+	public static void Noclip()
+	{
+		var player = PlayerBase.Local;
+		if ( !player.IsHost ) return;
+		player.ToggleNoclip();
+		Log.Info( (player.Noclip ? "Enabled" : "Disabled") + " Noclip" );
+	}
+
+
+	[ConCmd( "changemap", Help = "Change the map (host only)" )]
+	public static void ChangeMap( string mapIdent )
+	{
+		var player = PlayerBase.Local;
+		if ( player is not null && !player.IsHost ) return;
+
+		SceneLoadOptions options = new()
+		{
+			ShowLoadingScreen = true,
+			DeleteEverything = true,
+		};
+
+		var networkManager = Game.ActiveScene.GetComponentInChildren<DemoNetworkManager>();
+		options.SetScene( networkManager.MainScene );
+		LaunchArguments.Map = mapIdent;
+		Game.ChangeScene( options );
+	}
+
+	[ConCmd( "setactive", Help = "Changes the active inventory item" )]
+	public static void ChangeWeapon( string className )
+	{
+		var player = PlayerBase.Local;
+		player.Inventory.SetActive( className );
+	}
+
+	[ConCmd( "bot", Help = "Adds a bot" )]
+	public static void Bot()
+	{
+		var player = PlayerBase.Local;
+		if ( !player.IsHost ) return;
+
+		var bot = DemoBot.AddBot();
+		Log.Info( bot.DisplayName + " joined the game!" );
+	}
+}

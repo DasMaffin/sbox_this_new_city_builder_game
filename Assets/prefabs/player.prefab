@@ -163,7 +163,7 @@
             "__enabled": true,
             "Flags": 0,
             "AnimationGraph": null,
-            "BodyGroups": 681,
+            "BodyGroups": 649,
             "BoneMergeTarget": null,
             "CreateAttachments": false,
             "CreateBoneObjects": true,
@@ -270,7 +270,7 @@
             "OnComponentFixedUpdate": null,
             "OnComponentStart": null,
             "OnComponentUpdate": null,
-            "RemoveUnownedItems": false,
+            "RemoveUnownedItems": true,
             "Source": "OwnerConnection",
             "WorkshopItems": []
           }
@@ -419,8 +419,8 @@
                                     "__version": 2,
                                     "Flags": 0,
                                     "Name": "face_lid_lower_R",
-                                    "Position": "6.90886307,5.14055634,-3.23444366",
-                                    "Rotation": "-0.129229978,0.981804967,-0.137949333,-0.0181267262",
+                                    "Position": "6.90885544,5.14055824,-3.23443222",
+                                    "Rotation": "-0.129229978,0.981804907,-0.13794902,-0.0181280077",
                                     "Scale": "1,1,1",
                                     "Tags": "",
                                     "Enabled": true,
@@ -437,8 +437,8 @@
                                     "__version": 2,
                                     "Flags": 0,
                                     "Name": "face_lid_lower_L",
-                                    "Position": "6.90884399,5.14039612,3.23484039",
-                                    "Rotation": "-0.129229963,0.981798887,0.137992397,0.0181267411",
+                                    "Position": "6.90883255,5.14039993,3.23484802",
+                                    "Rotation": "-0.129229918,0.981798887,0.137992144,0.0181279778",
                                     "Scale": "1,1,1",
                                     "Tags": "",
                                     "Enabled": true,
@@ -455,8 +455,8 @@
                                     "__version": 2,
                                     "Flags": 0,
                                     "Name": "face_lid_upper_L",
-                                    "Position": "6.90884399,5.14039612,3.23484039",
-                                    "Rotation": "0.981798887,0.129229918,0.0181284696,-0.137992039",
+                                    "Position": "6.90883255,5.14039993,3.23484802",
+                                    "Rotation": "0.981798947,0.129229933,0.0181284398,-0.137992069",
                                     "Scale": "1,1,1",
                                     "Tags": "",
                                     "Enabled": true,
@@ -473,8 +473,8 @@
                                     "__version": 2,
                                     "Flags": 0,
                                     "Name": "face_lid_upper_R",
-                                    "Position": "6.90886307,5.14055634,-3.23444366",
-                                    "Rotation": "0.981804967,0.129229978,-0.0181284845,0.137948886",
+                                    "Position": "6.90885544,5.14055824,-3.23443222",
+                                    "Rotation": "0.981804967,0.129229963,-0.0181284547,0.137948915",
                                     "Scale": "1,1,1",
                                     "Tags": "",
                                     "Enabled": true,
@@ -491,8 +491,8 @@
                                     "__version": 2,
                                     "Flags": 0,
                                     "Name": "ear_R",
-                                    "Position": "5.62147903,-0.415428162,-5.92918015",
-                                    "Rotation": "0.0462262407,-0.693499386,0.13790676,-0.705623329",
+                                    "Position": "5.62147522,-0.415424347,-5.92919159",
+                                    "Rotation": "0.0462260954,-0.69349885,0.137906671,-0.705623865",
                                     "Scale": "1,1,1",
                                     "Tags": "",
                                     "Enabled": true,
@@ -509,8 +509,8 @@
                                     "__version": 2,
                                     "Flags": 0,
                                     "Name": "ear_L",
-                                    "Position": "5.62153625,-0.415521622,5.92905426",
-                                    "Rotation": "0.705614209,-0.1379489,0.693499804,-0.0462260842",
+                                    "Position": "5.62154007,-0.415525436,5.92906189",
+                                    "Rotation": "0.70561409,-0.13794893,0.693499684,-0.0462260544",
                                     "Scale": "1,1,1",
                                     "Tags": "",
                                     "Enabled": true,
@@ -912,7 +912,7 @@
                                             "Children": []
                                           },
                                           {
-                                            "__guid": "c26401f6-7656-4401-bf94-c7ce266e56d0",
+                                            "__guid": "28239b3b-084b-45d3-aa03-71c341e1e06b",
                                             "__version": 2,
                                             "Flags": 4,
                                             "Name": "finger_pinky_meta_L",
@@ -929,7 +929,7 @@
                                             "Components": [],
                                             "Children": [
                                               {
-                                                "__guid": "f2ced641-1d21-4d49-9012-5342b89769e1",
+                                                "__guid": "b1cf5238-84d2-41ba-8dcb-b7a1192dd278",
                                                 "__version": 2,
                                                 "Flags": 4,
                                                 "Name": "finger_pinky_0_L",
@@ -946,7 +946,7 @@
                                                 "Components": [],
                                                 "Children": [
                                                   {
-                                                    "__guid": "f6ca7d9b-217b-4679-8e02-d3b0f6dbb700",
+                                                    "__guid": "fc21b36d-2ee1-49d5-9ba5-38d104bb89d6",
                                                     "__version": 2,
                                                     "Flags": 4,
                                                     "Name": "finger_pinky_1_L",
@@ -963,7 +963,7 @@
                                                     "Components": [],
                                                     "Children": [
                                                       {
-                                                        "__guid": "13c113cf-82d4-4732-b783-0cbecf6832c4",
+                                                        "__guid": "a6f8d648-8cf9-49e7-8766-7a20f02cfae0",
                                                         "__version": 2,
                                                         "Flags": 4,
                                                         "Name": "finger_pinky_2_L",
@@ -1470,7 +1470,7 @@
                                             "Children": []
                                           },
                                           {
-                                            "__guid": "f8fec618-d826-4007-bd10-397b7423e925",
+                                            "__guid": "e494a559-92a9-4263-9af8-81c59d36de92",
                                             "__version": 2,
                                             "Flags": 4,
                                             "Name": "finger_pinky_meta_R",
@@ -1487,7 +1487,7 @@
                                             "Components": [],
                                             "Children": [
                                               {
-                                                "__guid": "27446b5c-2b44-4df1-9892-d1af6a0c19db",
+                                                "__guid": "016bba04-fb1d-4fd5-aba9-35057323bd4b",
                                                 "__version": 2,
                                                 "Flags": 4,
                                                 "Name": "finger_pinky_0_R",
@@ -1504,7 +1504,7 @@
                                                 "Components": [],
                                                 "Children": [
                                                   {
-                                                    "__guid": "752a7ea1-8a30-41a0-97e3-dc36fa561c43",
+                                                    "__guid": "783de651-6a18-4363-8144-758b40861844",
                                                     "__version": 2,
                                                     "Flags": 4,
                                                     "Name": "finger_pinky_1_R",
@@ -1521,7 +1521,7 @@
                                                     "Components": [],
                                                     "Children": [
                                                       {
-                                                        "__guid": "d42e17e1-03b9-480d-9801-3408b93f64ff",
+                                                        "__guid": "878105f8-617a-416f-86aa-cfa42298a347",
                                                         "__version": 2,
                                                         "Flags": 4,
                                                         "Name": "finger_pinky_2_R",
@@ -1586,8 +1586,8 @@
                                             "__version": 2,
                                             "Flags": 0,
                                             "Name": "arm_elbow_helper_R",
-                                            "Position": "0.00160217285,0.00663471222,0.000396728516",
-                                            "Rotation": "0.0014821887,0.00122952927,0.75019598,-0.661212564",
+                                            "Position": "0.000713348389,0.000234127045,0.000402450562",
+                                            "Rotation": "0.00149798393,0.0011480134,0.757898927,-0.652369142",
                                             "Scale": "1,1,1",
                                             "Tags": "",
                                             "Enabled": true,
@@ -1602,7 +1602,7 @@
                                         ]
                                       },
                                       {
-                                        "__guid": "b45abe7a-9613-414a-a6f0-8a3f47c3eecb",
+                                        "__guid": "c3775888-0ad6-4875-98d4-bdf92bdf9230",
                                         "__version": 2,
                                         "Flags": 4,
                                         "Name": "arm_elbow_helper_R",
@@ -1666,8 +1666,8 @@
                             "__version": 2,
                             "Flags": 0,
                             "Name": "neck_clothing",
-                            "Position": "5.82006454,-0.09349823,-0.00296020508",
-                            "Rotation": "8.46385956E-06,-0.000216260552,0.0131882876,-0.999913096",
+                            "Position": "5.82008362,-0.0934963226,-0.00298690796",
+                            "Rotation": "8.32974911E-06,-0.000216379762,0.00998304784,-0.99995023",
                             "Scale": "1,1,1",
                             "Tags": "",
                             "Enabled": true,
@@ -2075,8 +2075,8 @@
                 "__version": 2,
                 "Flags": 0,
                 "Name": "hand_R_IK_target",
-                "Position": "-2.71962404,-11.3581514,33.2663422",
-                "Rotation": "0.458261698,0.351303667,-0.607508481,0.545450032",
+                "Position": "-2.71962404,-11.3581524,33.2663422",
+                "Rotation": "0.458261818,0.351303726,-0.6075086,0.545449793",
                 "Scale": "1,1,1",
                 "Tags": "",
                 "Enabled": true,
@@ -2093,8 +2093,8 @@
                 "__version": 2,
                 "Flags": 0,
                 "Name": "hand_L_IK_target",
-                "Position": "-2.71951628,11.3580608,33.2663498",
-                "Rotation": "0.545450032,0.607507706,-0.351303309,0.45826298",
+                "Position": "-2.71951628,11.3580599,33.2663498",
+                "Rotation": "0.545449793,0.607507646,-0.351303101,0.458263516",
                 "Scale": "1,1,1",
                 "Tags": "",
                 "Enabled": true,
@@ -2198,7 +2198,7 @@
                 "Children": []
               },
               {
-                "__guid": "d720ab9a-abae-4dae-aaa6-ee4483eaa93f",
+                "__guid": "fea9392b-6c7a-4033-84ee-dbcb7695426a",
                 "__version": 2,
                 "Flags": 4,
                 "Name": "hand_R_IK_attach",
@@ -2215,7 +2215,7 @@
                 "Components": [],
                 "Children": [
                   {
-                    "__guid": "a336140d-2601-4c63-a540-4cf64b350bcc",
+                    "__guid": "375679d3-8dd6-4735-9dd8-ce558b97c60f",
                     "__version": 2,
                     "Flags": 4,
                     "Name": "hand_R_IK_target",
@@ -2235,7 +2235,7 @@
                 ]
               },
               {
-                "__guid": "29e9d0ce-dd63-4233-912f-149c842f9f76",
+                "__guid": "ee73d263-6969-4d89-9ada-ab54b5c8da1e",
                 "__version": 2,
                 "Flags": 4,
                 "Name": "hand_L_IK_attach",
@@ -2252,7 +2252,7 @@
                 "Components": [],
                 "Children": [
                   {
-                    "__guid": "e74c4e20-6d4c-4637-b11c-df93f1d414ca",
+                    "__guid": "6a4d5829-9108-408a-a891-92bb7ebf3f25",
                     "__version": 2,
                     "Flags": 4,
                     "Name": "hand_L_IK_target",
@@ -2272,6 +2272,75 @@
                 ]
               }
             ]
+          },
+          {
+            "__guid": "bfc8e25d-f741-4523-8f3e-8947444ea532",
+            "__version": 2,
+            "Flags": 0,
+            "Name": "Clothing - y_front_pants_white",
+            "Position": "0,0,0",
+            "Rotation": "0,0,0,1",
+            "Scale": "1,1,1",
+            "Tags": "clothing",
+            "Enabled": true,
+            "NetworkMode": 2,
+            "NetworkFlags": 0,
+            "NetworkOrphaned": 0,
+            "NetworkTransmit": true,
+            "OwnerTransfer": 1,
+            "Components": [
+              {
+                "__type": "Sandbox.SkinnedModelRenderer",
+                "__guid": "1c38906b-0a26-481a-af61-063f3cf10856",
+                "__enabled": true,
+                "Flags": 0,
+                "AnimationGraph": null,
+                "BodyGroups": 18446744073709551615,
+                "BoneMergeTarget": {
+                  "_type": "component",
+                  "component_id": "fc51159a-2082-4de0-8c3e-5f44d049ed23",
+                  "go": "55559241-6791-4c24-9635-07aceee3d8a4",
+                  "component_type": "SkinnedModelRenderer"
+                },
+                "CreateAttachments": false,
+                "CreateBoneObjects": false,
+                "LodOverride": null,
+                "MaterialGroup": null,
+                "MaterialOverride": null,
+                "Materials": null,
+                "Model": "models/citizen_clothes/underwear/y_front_pants/models/y_front_pants_m_human.vmdl",
+                "Morphs": {},
+                "OnComponentDestroy": null,
+                "OnComponentDisabled": null,
+                "OnComponentEnabled": null,
+                "OnComponentFixedUpdate": null,
+                "OnComponentStart": null,
+                "OnComponentUpdate": null,
+                "Parameters": {
+                  "bools": {},
+                  "ints": {},
+                  "floats": {},
+                  "vectors": {},
+                  "rotations": {}
+                },
+                "PlaybackRate": 1,
+                "RenderOptions": {
+                  "GameLayer": true,
+                  "OverlayLayer": false,
+                  "BloomLayer": false,
+                  "AfterUILayer": false
+                },
+                "RenderType": "On",
+                "Sequence": {
+                  "Name": null,
+                  "Looping": true,
+                  "Blending": false
+                },
+                "Tint": "1,1,1,1",
+                "UseAnimGraph": true
+              }
+            ],
+            "Children": []
           }
         ]
       },
@@ -2476,6 +2545,23 @@
               "component_type": "DemoPlayer"
             },
             "ShoulderOffset": 30
+          },
+          {
+            "__type": "ForwardTraceHandler",
+            "__guid": "3e9baae4-710f-4297-b7f6-5e7bb7644ee7",
+            "__enabled": true,
+            "Flags": 0,
+            "OnComponentDestroy": null,
+            "OnComponentDisabled": null,
+            "OnComponentEnabled": null,
+            "OnComponentFixedUpdate": null,
+            "OnComponentStart": null,
+            "OnComponentUpdate": null,
+            "WithAnyTags": [],
+            "WithoutTags": [
+              "foliage",
+              "player"
+            ]
           }
         ],
         "Children": []
@@ -2530,6 +2616,22 @@
               "component_id": "3e1e96c5-b788-4483-9ffd-7b59b02df678",
               "go": "bf0f959a-8e13-4133-8fc5-edc7aa3d1b0c",
               "component_type": "DemoPlayer"
+            }
+          },
+          {
+            "__type": "RadialMenuComponent",
+            "__guid": "bf1acd8c-ff43-42e2-883b-42e4f2ffed44",
+            "__enabled": true,
+            "Flags": 0,
+            "OnComponentDestroy": null,
+            "OnComponentDisabled": null,
+            "OnComponentEnabled": null,
+            "OnComponentFixedUpdate": null,
+            "OnComponentStart": null,
+            "OnComponentUpdate": null,
+            "t1TownHall": {
+              "_type": "gameobject",
+              "prefab": "city stuff/rpgpp_lt/prefabs/structures/rpgpp_lt_building_01.prefab"
             }
           }
         ],

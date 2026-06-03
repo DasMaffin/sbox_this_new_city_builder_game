@@ -1,0 +1,55 @@
+﻿{
+  "RootObject": {
+    "__guid": "591b22b1-09de-4594-a1ad-e73498e8e6fa",
+    "__version": 2,
+    "Flags": 0,
+    "Name": "rpgpp_av_roof_end_01_6x5_wall_beam_e",
+    "Position": "0,0,0",
+    "Rotation": "1.8812949E-09,0,0,1",
+    "Scale": "0.4,0.4,0.4",
+    "Tags": "",
+    "Enabled": true,
+    "NetworkMode": 2,
+    "NetworkFlags": 0,
+    "NetworkOrphaned": 0,
+    "NetworkTransmit": true,
+    "OwnerTransfer": 1,
+    "Components": [
+      {
+        "__type": "Sandbox.ModelRenderer",
+        "__guid": "58be28cf-cb9d-49f4-a198-5e7d3f9b961e",
+        "__enabled": true,
+        "Flags": 0,
+        "BodyGroups": 18446744073709551615,
+        "CreateAttachments": false,
+        "LodOverride": null,
+        "MaterialGroup": null,
+        "MaterialOverride": "city stuff/rpgpp_av/textures/rpgpp_av_tex_b.vmat",
+        "Materials": null,
+        "Model": "city stuff/rpgpp_av/models/structures/rpgpp_av_roof_end_01_6x5_wall_beam_e.vmdl",
+        "OnComponentDestroy": null,
+        "OnComponentDisabled": null,
+        "OnComponentEnabled": null,
+        "OnComponentFixedUpdate": null,
+        "OnComponentStart": null,
+        "OnComponentUpdate": null,
+        "RenderOptions": {
+          "GameLayer": true,
+          "OverlayLayer": false,
+          "BloomLayer": false,
+          "AfterUILayer": false
+        },
+        "RenderType": "On",
+        "Tint": "1,1,1,1"
+      }
+    ],
+    "Children": []
+  },
+  "ResourceVersion": 2,
+  "ShowInMenu": false,
+  "MenuPath": null,
+  "MenuIcon": null,
+  "DontBreakAsTemplate": false,
+  "__references": [],
+  "__version": 2
+}

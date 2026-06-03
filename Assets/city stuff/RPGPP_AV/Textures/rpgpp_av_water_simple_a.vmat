@@ -1,0 +1,11 @@
+
+Layer0
+{
+	shader "shaders/complex.shader_c"
+
+	TextureColor "city stuff/rpgpp_av/textures/rpgpp_av_water_simple_a_normal.png"
+	TextureAmbientOcclusion "materials/default/default_ao.tga"
+	TextureNormal "city stuff/rpgpp_av/textures/rpgpp_av_water_simple_a_normal.png"
+	TextureRoughness "materials/default/default_rough.tga"
+
+}

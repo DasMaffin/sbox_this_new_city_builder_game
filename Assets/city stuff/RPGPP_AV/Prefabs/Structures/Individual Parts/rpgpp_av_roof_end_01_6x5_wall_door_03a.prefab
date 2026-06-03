@@ -1,0 +1,55 @@
+﻿{
+  "RootObject": {
+    "__guid": "13ba0dd3-086d-450e-8a88-4e38d3664da7",
+    "__version": 2,
+    "Flags": 0,
+    "Name": "rpgpp_av_roof_end_01_6x5_wall_door_03a",
+    "Position": "0,0,0",
+    "Rotation": "1.8812949E-09,0,0,1",
+    "Scale": "0.4,0.4,0.4",
+    "Tags": "",
+    "Enabled": true,
+    "NetworkMode": 2,
+    "NetworkFlags": 0,
+    "NetworkOrphaned": 0,
+    "NetworkTransmit": true,
+    "OwnerTransfer": 1,
+    "Components": [
+      {
+        "__type": "Sandbox.ModelRenderer",
+        "__guid": "0c80a6a2-1d3f-4bd0-a126-2c72bc5e4be3",
+        "__enabled": true,
+        "Flags": 0,
+        "BodyGroups": 18446744073709551615,
+        "CreateAttachments": false,
+        "LodOverride": null,
+        "MaterialGroup": null,
+        "MaterialOverride": "city stuff/rpgpp_av/textures/rpgpp_av_tex_b.vmat",
+        "Materials": null,
+        "Model": "city stuff/rpgpp_av/models/structures/rpgpp_av_roof_end_01_6x5_wall_door_03a.vmdl",
+        "OnComponentDestroy": null,
+        "OnComponentDisabled": null,
+        "OnComponentEnabled": null,
+        "OnComponentFixedUpdate": null,
+        "OnComponentStart": null,
+        "OnComponentUpdate": null,
+        "RenderOptions": {
+          "GameLayer": true,
+          "OverlayLayer": false,
+          "BloomLayer": false,
+          "AfterUILayer": false
+        },
+        "RenderType": "On",
+        "Tint": "1,1,1,1"
+      }
+    ],
+    "Children": []
+  },
+  "ResourceVersion": 2,
+  "ShowInMenu": false,
+  "MenuPath": null,
+  "MenuIcon": null,
+  "DontBreakAsTemplate": false,
+  "__references": [],
+  "__version": 2
+}

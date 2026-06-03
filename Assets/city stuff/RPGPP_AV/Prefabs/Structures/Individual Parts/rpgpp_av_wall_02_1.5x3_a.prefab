@@ -1,0 +1,55 @@
+﻿{
+  "RootObject": {
+    "__guid": "aa36d15e-f7e8-424f-8cd8-55c2416a48b1",
+    "__version": 2,
+    "Flags": 0,
+    "Name": "rpgpp_av_wall_02_1.5x3_a",
+    "Position": "0,0,0",
+    "Rotation": "1.8812949E-09,0,0,1",
+    "Scale": "0.4,0.4,0.4",
+    "Tags": "",
+    "Enabled": true,
+    "NetworkMode": 2,
+    "NetworkFlags": 0,
+    "NetworkOrphaned": 0,
+    "NetworkTransmit": true,
+    "OwnerTransfer": 1,
+    "Components": [
+      {
+        "__type": "Sandbox.ModelRenderer",
+        "__guid": "e560f2e9-cbc1-4b4d-abe4-44699ba2b926",
+        "__enabled": true,
+        "Flags": 0,
+        "BodyGroups": 18446744073709551615,
+        "CreateAttachments": false,
+        "LodOverride": null,
+        "MaterialGroup": null,
+        "MaterialOverride": "city stuff/rpgpp_av/textures/rpgpp_av_tex_b.vmat",
+        "Materials": null,
+        "Model": "city stuff/rpgpp_av/models/structures/rpgpp_av_wall_02_1.5x3_a.vmdl",
+        "OnComponentDestroy": null,
+        "OnComponentDisabled": null,
+        "OnComponentEnabled": null,
+        "OnComponentFixedUpdate": null,
+        "OnComponentStart": null,
+        "OnComponentUpdate": null,
+        "RenderOptions": {
+          "GameLayer": true,
+          "OverlayLayer": false,
+          "BloomLayer": false,
+          "AfterUILayer": false
+        },
+        "RenderType": "On",
+        "Tint": "1,1,1,1"
+      }
+    ],
+    "Children": []
+  },
+  "ResourceVersion": 2,
+  "ShowInMenu": false,
+  "MenuPath": null,
+  "MenuIcon": null,
+  "DontBreakAsTemplate": false,
+  "__references": [],
+  "__version": 2
+}

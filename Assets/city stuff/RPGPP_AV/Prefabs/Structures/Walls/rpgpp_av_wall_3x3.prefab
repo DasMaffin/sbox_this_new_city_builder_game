@@ -1,0 +1,1362 @@
+{
+  "RootObject": {
+    "__guid": "691b0ea9-4dd7-43c4-997f-e30068fdb5c3",
+    "__version": 2,
+    "Flags": 0,
+    "Name": "rpgpp_av_wall_3x3",
+    "Position": "0,0,0",
+    "Rotation": "0,0,0,1",
+    "Scale": "1,1,1",
+    "Tags": "",
+    "Enabled": true,
+    "NetworkMode": 2,
+    "NetworkFlags": 0,
+    "NetworkOrphaned": 0,
+    "NetworkTransmit": true,
+    "OwnerTransfer": 1,
+    "Components": [],
+    "Children": [
+      {
+        "__guid": "51e71cff-6b3e-491c-b2b7-93be200ad782",
+        "__version": 2,
+        "Flags": 0,
+        "Name": "rpgpp_av_wall_01_3x3",
+        "Position": "0,0,0",
+        "Rotation": "0,0,0,1",
+        "Scale": "1,1,1",
+        "Tags": "",
+        "Enabled": true,
+        "NetworkMode": 2,
+        "NetworkFlags": 0,
+        "NetworkOrphaned": 0,
+        "NetworkTransmit": true,
+        "OwnerTransfer": 1,
+        "Components": [],
+        "Children": [
+          {
+            "__guid": "a89e2172-9cda-4900-92cc-f43a6b967d2e",
+            "__version": 2,
+            "__Prefab": "city stuff/rpgpp_av/prefabs/structures/individual parts/rpgpp_av_wall_01_3x3_a.prefab",
+            "__PrefabInstancePatch": {
+              "AddedObjects": [],
+              "RemovedObjects": [],
+              "PropertyOverrides": [],
+              "MovedObjects": []
+            },
+            "__PrefabIdToInstanceId": {
+              "ec220d6f-d71e-479d-b999-572a0c681cf6": "a89e2172-9cda-4900-92cc-f43a6b967d2e",
+              "5dcfdb54-fc65-4e99-9758-361f507fb37c": "3f6dd382-3973-451b-9011-44c685fea22e",
+              "eebed03d-97f2-42cb-a18f-90953f227f2b": "0dd67cf4-06a5-4bed-9911-d0b239a8ac29"
+            }
+          },
+          {
+            "__guid": "6771fcbd-fa9a-471f-9ca7-60326c77acaa",
+            "__version": 2,
+            "__Prefab": "city stuff/rpgpp_av/prefabs/structures/individual parts/rpgpp_av_wall_01_3x3_b.prefab",
+            "__PrefabInstancePatch": {
+              "AddedObjects": [],
+              "RemovedObjects": [],
+              "PropertyOverrides": [
+                {
+                  "Target": {
+                    "Type": "GameObject",
+                    "IdValue": "058d0936-37ad-4bd4-b890-1f05614aa60a"
+                  },
+                  "Property": "Enabled",
+                  "Value": false
+                }
+              ],
+              "MovedObjects": []
+            },
+            "__PrefabIdToInstanceId": {
+              "058d0936-37ad-4bd4-b890-1f05614aa60a": "6771fcbd-fa9a-471f-9ca7-60326c77acaa",
+              "4b5fa26f-0058-48fc-b820-37dcf5096976": "365351de-6cdc-44c7-8cc7-53d7081096f5",
+              "7120df6b-3677-483c-bf0a-671277ca8d27": "74e5a101-d7fc-4e42-9ea9-a2de10f3c23d"
+            }
+          },
+          {
+            "__guid": "165328d9-22f4-4c56-8449-eca92a35dad1",
+            "__version": 2,
+            "__Prefab": "city stuff/rpgpp_av/prefabs/structures/individual parts/rpgpp_av_wall_01_3x3_c.prefab",
+            "__PrefabInstancePatch": {
+              "AddedObjects": [],
+              "RemovedObjects": [],
+              "PropertyOverrides": [
+                {
+                  "Target": {
+                    "Type": "GameObject",
+                    "IdValue": "d6620edf-4cb6-4bb6-a099-dbef26c2b8b5"
+                  },
+                  "Property": "Enabled",
+                  "Value": false
+                }
+              ],
+              "MovedObjects": []
+            },
+            "__PrefabIdToInstanceId": {
+              "d6620edf-4cb6-4bb6-a099-dbef26c2b8b5": "165328d9-22f4-4c56-8449-eca92a35dad1",
+              "0ae49d20-c2a0-437c-99c3-fc70176a3dc8": "3a5fb4cf-3477-4b0f-92bf-c73376058912",
+              "1fa80bd2-4a9a-4b8d-8d26-021b1775ee66": "ce832ea5-c02a-4bb0-8562-f3bec8758b79"
+            }
+          },
+          {
+            "__guid": "fa3710a0-935c-41eb-a7ee-8f4cab0325c6",
+            "__version": 2,
+            "__Prefab": "city stuff/rpgpp_av/prefabs/structures/individual parts/rpgpp_av_wall_01_3x3_d.prefab",
+            "__PrefabInstancePatch": {
+              "AddedObjects": [],
+              "RemovedObjects": [],
+              "PropertyOverrides": [
+                {
+                  "Target": {
+                    "Type": "GameObject",
+                    "IdValue": "2e115bc7-252c-403b-8758-cb23cf56cc7a"
+                  },
+                  "Property": "Enabled",
+                  "Value": false
+                }
+              ],
+              "MovedObjects": []
+            },
+            "__PrefabIdToInstanceId": {
+              "2e115bc7-252c-403b-8758-cb23cf56cc7a": "fa3710a0-935c-41eb-a7ee-8f4cab0325c6",
+              "119adf8e-8769-4e3b-a7de-41dfa7e39177": "af68ebc5-a032-477e-bea0-82f0f3bbbbd0",
+              "51d03d85-84a7-44ba-9d4c-bf504e704052": "149d4c58-ffde-4a16-8ca0-62614dacbffe"
+            }
+          },
+          {
+            "__guid": "433de144-d620-46c7-b139-9d7f568fa336",
+            "__version": 2,
+            "__Prefab": "city stuff/rpgpp_av/prefabs/structures/individual parts/rpgpp_av_wall_01_3x3_e.prefab",
+            "__PrefabInstancePatch": {
+              "AddedObjects": [],
+              "RemovedObjects": [],
+              "PropertyOverrides": [
+                {
+                  "Target": {
+                    "Type": "GameObject",
+                    "IdValue": "7158f00a-afa5-4e42-9c9b-24dfc9c2f188"
+                  },
+                  "Property": "Enabled",
+                  "Value": false
+                }
+              ],
+              "MovedObjects": []
+            },
+            "__PrefabIdToInstanceId": {
+              "7158f00a-afa5-4e42-9c9b-24dfc9c2f188": "433de144-d620-46c7-b139-9d7f568fa336",
+              "35e17c6f-6fc0-4238-9649-9bd120f1b1df": "bf294ca1-f25f-4062-9778-a2725c3db4a9",
+              "cdcc00b6-411b-4d44-a62c-bbfb3c52e4d9": "19121603-5877-400b-8dd5-8cf9c09979ac"
+            }
+          },
+          {
+            "__guid": "160e953c-1281-4eeb-9a02-29f42857afa9",
+            "__version": 2,
+            "__Prefab": "city stuff/rpgpp_av/prefabs/structures/individual parts/rpgpp_av_wall_01_3x3_f.prefab",
+            "__PrefabInstancePatch": {
+              "AddedObjects": [],
+              "RemovedObjects": [],
+              "PropertyOverrides": [
+                {
+                  "Target": {
+                    "Type": "GameObject",
+                    "IdValue": "db65cbb1-41c9-440c-a31e-d1c7b2197e54"
+                  },
+                  "Property": "Enabled",
+                  "Value": false
+                }
+              ],
+              "MovedObjects": []
+            },
+            "__PrefabIdToInstanceId": {
+              "db65cbb1-41c9-440c-a31e-d1c7b2197e54": "160e953c-1281-4eeb-9a02-29f42857afa9",
+              "bfeac18b-a0c0-498e-bf9e-ea54f0d127f4": "b362c045-49da-4059-bdd6-98db34e0d8ab",
+              "1f8bb7d4-ff75-429e-94cf-c675d3614249": "05a5e6d2-8515-4dcd-aaab-f247457e3689"
+            }
+          },
+          {
+            "__guid": "7334a3ec-0b84-4907-8f34-a2ceeb7c4321",
+            "__version": 2,
+            "__Prefab": "city stuff/rpgpp_av/prefabs/structures/individual parts/rpgpp_av_wall_01_3x3_g.prefab",
+            "__PrefabInstancePatch": {
+              "AddedObjects": [],
+              "RemovedObjects": [],
+              "PropertyOverrides": [
+                {
+                  "Target": {
+                    "Type": "GameObject",
+                    "IdValue": "a423e337-138d-42c5-a3ad-40d0c6a66abd"
+                  },
+                  "Property": "Enabled",
+                  "Value": false
+                }
+              ],
+              "MovedObjects": []
+            },
+            "__PrefabIdToInstanceId": {
+              "a423e337-138d-42c5-a3ad-40d0c6a66abd": "7334a3ec-0b84-4907-8f34-a2ceeb7c4321",
+              "bccbf211-e654-4d69-a713-209bd46a9480": "4d2dcce4-b2f4-462d-912a-91d766b6903d",
+              "3cb2e07e-529b-4b4d-8c8f-21b6e89b4b44": "1b88bcb6-f24e-4463-9cf7-ae5375ca7db2"
+            }
+          }
+        ]
+      },
+      {
+        "__guid": "fd0ad3bc-0632-4ac5-a27e-39b59a812e55",
+        "__version": 2,
+        "Flags": 0,
+        "Name": "rpgpp_av_wall_02_3x3",
+        "Position": "0,0,0",
+        "Rotation": "0,0,0,1",
+        "Scale": "1,1,1",
+        "Tags": "",
+        "Enabled": false,
+        "NetworkMode": 2,
+        "NetworkFlags": 0,
+        "NetworkOrphaned": 0,
+        "NetworkTransmit": true,
+        "OwnerTransfer": 1,
+        "Components": [],
+        "Children": [
+          {
+            "__guid": "b02089e5-4efd-49fd-9db3-4092df2b66f2",
+            "__version": 2,
+            "__Prefab": "city stuff/rpgpp_av/prefabs/structures/individual parts/rpgpp_av_wall_02_3x3_a.prefab",
+            "__PrefabInstancePatch": {
+              "AddedObjects": [],
+              "RemovedObjects": [],
+              "PropertyOverrides": [
+                {
+                  "Target": {
+                    "Type": "GameObject",
+                    "IdValue": "2521d2f9-c9d8-4f73-96e8-98ed1b3caac2"
+                  },
+                  "Property": "Scale",
+                  "Value": "0.400000006,0.400000006,0.400000006"
+                },
+                {
+                  "Target": {
+                    "Type": "GameObject",
+                    "IdValue": "2521d2f9-c9d8-4f73-96e8-98ed1b3caac2"
+                  },
+                  "Property": "Enabled",
+                  "Value": false
+                }
+              ],
+              "MovedObjects": []
+            },
+            "__PrefabIdToInstanceId": {
+              "2521d2f9-c9d8-4f73-96e8-98ed1b3caac2": "b02089e5-4efd-49fd-9db3-4092df2b66f2",
+              "c1c1a493-f8be-491f-adb0-57ee7c05c6b4": "f2780fa3-f8e1-4de0-983d-dc6f7c8d88bd",
+              "a028593e-f150-441a-ab39-4bfb7facab5e": "551628f0-cf26-4c15-a234-a4dede17921c"
+            }
+          },
+          {
+            "__guid": "b2990f1c-f611-4cec-b28a-1ced7efdd06a",
+            "__version": 2,
+            "__Prefab": "city stuff/rpgpp_av/prefabs/structures/individual parts/rpgpp_av_wall_02_3x3_b.prefab",
+            "__PrefabInstancePatch": {
+              "AddedObjects": [],
+              "RemovedObjects": [],
+              "PropertyOverrides": [
+                {
+                  "Target": {
+                    "Type": "GameObject",
+                    "IdValue": "f9a8d88b-5bcc-4c2d-af40-d8e841759763"
+                  },
+                  "Property": "Position",
+                  "Value": "-1157.54724,-2532.13062,-349.604889"
+                },
+                {
+                  "Target": {
+                    "Type": "GameObject",
+                    "IdValue": "f9a8d88b-5bcc-4c2d-af40-d8e841759763"
+                  },
+                  "Property": "Scale",
+                  "Value": "0.400000006,0.400000006,0.400000006"
+                },
+                {
+                  "Target": {
+                    "Type": "GameObject",
+                    "IdValue": "f9a8d88b-5bcc-4c2d-af40-d8e841759763"
+                  },
+                  "Property": "Enabled",
+                  "Value": false
+                }
+              ],
+              "MovedObjects": []
+            },
+            "__PrefabIdToInstanceId": {
+              "f9a8d88b-5bcc-4c2d-af40-d8e841759763": "b2990f1c-f611-4cec-b28a-1ced7efdd06a",
+              "8c7b6eda-6d31-4457-926b-858d303b9fce": "8244ef4a-cfb0-45c2-8906-e636c9855e8e",
+              "2377b61f-5fd8-4801-87f2-be9925f6885d": "dc87bf5a-c677-4c56-a314-6c27705b4298"
+            }
+          },
+          {
+            "__guid": "2f36a6dc-831d-4a61-afc7-7cd214c5bb31",
+            "__version": 2,
+            "__Prefab": "city stuff/rpgpp_av/prefabs/structures/individual parts/rpgpp_av_wall_02_3x3_c.prefab",
+            "__PrefabInstancePatch": {
+              "AddedObjects": [],
+              "RemovedObjects": [],
+              "PropertyOverrides": [
+                {
+                  "Target": {
+                    "Type": "GameObject",
+                    "IdValue": "23b25755-ca76-4440-80cf-04e93e8c909a"
+                  },
+                  "Property": "Scale",
+                  "Value": "0.400000006,0.400000006,0.400000006"
+                },
+                {
+                  "Target": {
+                    "Type": "GameObject",
+                    "IdValue": "23b25755-ca76-4440-80cf-04e93e8c909a"
+                  },
+                  "Property": "Enabled",
+                  "Value": false
+                }
+              ],
+              "MovedObjects": []
+            },
+            "__PrefabIdToInstanceId": {
+              "23b25755-ca76-4440-80cf-04e93e8c909a": "2f36a6dc-831d-4a61-afc7-7cd214c5bb31",
+              "7bb0b254-7e9f-4dd4-a4a5-15e6b5d5b4e3": "c91709d1-455b-4da3-a149-9ad8e9b9ee78",
+              "58f74975-2aa1-4ce5-bb66-dc79f21bb693": "de63be55-e8c1-4c91-8e57-08f1a111b73e"
+            }
+          },
+          {
+            "__guid": "7263582f-8944-4da3-a3a2-3f0260ad8fb0",
+            "__version": 2,
+            "__Prefab": "city stuff/rpgpp_av/prefabs/structures/individual parts/rpgpp_av_wall_02_3x3_d.prefab",
+            "__PrefabInstancePatch": {
+              "AddedObjects": [],
+              "RemovedObjects": [],
+              "PropertyOverrides": [
+                {
+                  "Target": {
+                    "Type": "GameObject",
+                    "IdValue": "2561e9cd-f5e0-43c9-a6d4-52aec8cc172b"
+                  },
+                  "Property": "Position",
+                  "Value": "-1157.54724,-2532.13062,-349.604889"
+                },
+                {
+                  "Target": {
+                    "Type": "GameObject",
+                    "IdValue": "2561e9cd-f5e0-43c9-a6d4-52aec8cc172b"
+                  },
+                  "Property": "Scale",
+                  "Value": "0.400000006,0.400000006,0.400000006"
+                },
+                {
+                  "Target": {
+                    "Type": "GameObject",
+                    "IdValue": "2561e9cd-f5e0-43c9-a6d4-52aec8cc172b"
+                  },
+                  "Property": "Enabled",
+                  "Value": false
+                }
+              ],
+              "MovedObjects": []
+            },
+            "__PrefabIdToInstanceId": {
+              "2561e9cd-f5e0-43c9-a6d4-52aec8cc172b": "7263582f-8944-4da3-a3a2-3f0260ad8fb0",
+              "f47e3cd0-a174-4459-91a4-bef8c440489c": "94577887-0e8c-4d65-a79d-bb0fc31d8798",
+              "3d37d10e-5817-43ae-b4d7-3b52a891395e": "439df4c0-87a1-48f5-ba3b-653d4d205976"
+            }
+          },
+          {
+            "__guid": "bf007330-ad44-49ae-8be2-5660e42fd85f",
+            "__version": 2,
+            "__Prefab": "city stuff/rpgpp_av/prefabs/structures/individual parts/rpgpp_av_wall_02_3x3_e.prefab",
+            "__PrefabInstancePatch": {
+              "AddedObjects": [],
+              "RemovedObjects": [],
+              "PropertyOverrides": [
+                {
+                  "Target": {
+                    "Type": "GameObject",
+                    "IdValue": "9fec030a-4274-40e0-a85f-9461342b6a92"
+                  },
+                  "Property": "Scale",
+                  "Value": "0.400000006,0.400000006,0.400000006"
+                },
+                {
+                  "Target": {
+                    "Type": "GameObject",
+                    "IdValue": "9fec030a-4274-40e0-a85f-9461342b6a92"
+                  },
+                  "Property": "Enabled",
+                  "Value": false
+                }
+              ],
+              "MovedObjects": []
+            },
+            "__PrefabIdToInstanceId": {
+              "9fec030a-4274-40e0-a85f-9461342b6a92": "bf007330-ad44-49ae-8be2-5660e42fd85f",
+              "296d527d-c287-4c37-a69f-a501ece3a2d1": "4c57cb40-135f-40e1-bd70-e9f773dcf1ed",
+              "74cdaef0-127e-41dd-ae4e-61d22b216410": "a1c67470-cea2-4af7-9c7d-46e06d000fac"
+            }
+          },
+          {
+            "__guid": "9c7effca-65b5-4c6a-912f-0ab458e44751",
+            "__version": 2,
+            "__Prefab": "city stuff/rpgpp_av/prefabs/structures/individual parts/rpgpp_av_wall_02_3x3_f.prefab",
+            "__PrefabInstancePatch": {
+              "AddedObjects": [],
+              "RemovedObjects": [],
+              "PropertyOverrides": [
+                {
+                  "Target": {
+                    "Type": "GameObject",
+                    "IdValue": "f485813b-35f4-4517-ad21-6efc67af1441"
+                  },
+                  "Property": "Position",
+                  "Value": "-1157.54724,-2532.13062,-349.604889"
+                },
+                {
+                  "Target": {
+                    "Type": "GameObject",
+                    "IdValue": "f485813b-35f4-4517-ad21-6efc67af1441"
+                  },
+                  "Property": "Scale",
+                  "Value": "0.400000006,0.400000006,0.400000006"
+                },
+                {
+                  "Target": {
+                    "Type": "GameObject",
+                    "IdValue": "f485813b-35f4-4517-ad21-6efc67af1441"
+                  },
+                  "Property": "Enabled",
+                  "Value": false
+                }
+              ],
+              "MovedObjects": []
+            },
+            "__PrefabIdToInstanceId": {
+              "f485813b-35f4-4517-ad21-6efc67af1441": "9c7effca-65b5-4c6a-912f-0ab458e44751",
+              "e8720b56-7f21-45a4-a3eb-45eb5b19276e": "d0b3c11e-6a59-445c-ad52-a65835140163",
+              "29f25576-2c05-408b-9480-9ed0b40c45ed": "557cdbfc-fcbd-4484-a112-b5b6d1a0046c"
+            }
+          },
+          {
+            "__guid": "8e3ec024-a3b5-40ba-aac7-3c5e67ed7347",
+            "__version": 2,
+            "__Prefab": "city stuff/rpgpp_av/prefabs/structures/individual parts/rpgpp_av_wall_02_3x3_g.prefab",
+            "__PrefabInstancePatch": {
+              "AddedObjects": [],
+              "RemovedObjects": [],
+              "PropertyOverrides": [
+                {
+                  "Target": {
+                    "Type": "GameObject",
+                    "IdValue": "ccea1e47-d611-4f61-86f9-6d31b192ed81"
+                  },
+                  "Property": "Position",
+                  "Value": "-1157.54724,-2532.13062,-349.604889"
+                },
+                {
+                  "Target": {
+                    "Type": "GameObject",
+                    "IdValue": "ccea1e47-d611-4f61-86f9-6d31b192ed81"
+                  },
+                  "Property": "Scale",
+                  "Value": "0.400000006,0.400000006,0.400000006"
+                },
+                {
+                  "Target": {
+                    "Type": "GameObject",
+                    "IdValue": "ccea1e47-d611-4f61-86f9-6d31b192ed81"
+                  },
+                  "Property": "Enabled",
+                  "Value": false
+                }
+              ],
+              "MovedObjects": []
+            },
+            "__PrefabIdToInstanceId": {
+              "ccea1e47-d611-4f61-86f9-6d31b192ed81": "8e3ec024-a3b5-40ba-aac7-3c5e67ed7347",
+              "f3f42b13-9eea-47e3-89fe-c0e450ee9026": "60af514d-f271-4f78-880e-92774979315b",
+              "b2444616-675d-4cb7-a25e-aadd831f7438": "a7b92e4e-acb9-4053-a077-cb3422c82cd4"
+            }
+          }
+        ]
+      },
+      {
+        "__guid": "78c0e79f-1d23-4fdb-9df8-d6df42ea9df1",
+        "__version": 2,
+        "Flags": 0,
+        "Name": "rpgpp_av_wall_03_3x3",
+        "Position": "0,0,0",
+        "Rotation": "0,0,0,1",
+        "Scale": "1,1,1",
+        "Tags": "",
+        "Enabled": false,
+        "NetworkMode": 2,
+        "NetworkFlags": 0,
+        "NetworkOrphaned": 0,
+        "NetworkTransmit": true,
+        "OwnerTransfer": 1,
+        "Components": [],
+        "Children": [
+          {
+            "__guid": "85b8bee8-d8b4-4f34-b502-c33a7d42f8b7",
+            "__version": 2,
+            "__Prefab": "city stuff/rpgpp_av/prefabs/structures/individual parts/rpgpp_av_wall_03_3x3_a.prefab",
+            "__PrefabInstancePatch": {
+              "AddedObjects": [],
+              "RemovedObjects": [],
+              "PropertyOverrides": [
+                {
+                  "Target": {
+                    "Type": "GameObject",
+                    "IdValue": "b9464b0c-4a62-4e51-8653-42fd029405a1"
+                  },
+                  "Property": "Position",
+                  "Value": "-1157.54724,-2532.13062,-349.604889"
+                },
+                {
+                  "Target": {
+                    "Type": "GameObject",
+                    "IdValue": "b9464b0c-4a62-4e51-8653-42fd029405a1"
+                  },
+                  "Property": "Enabled",
+                  "Value": false
+                }
+              ],
+              "MovedObjects": []
+            },
+            "__PrefabIdToInstanceId": {
+              "b9464b0c-4a62-4e51-8653-42fd029405a1": "85b8bee8-d8b4-4f34-b502-c33a7d42f8b7",
+              "676aa642-f14c-4ade-9ec7-95ca2cb5d9d0": "e3afd87a-f835-4f6b-9b8c-dbc7ab93d4e1",
+              "0a314bdb-1883-4b70-a005-e89451673a21": "b0f472f9-f428-4a24-afa6-3c0c86e85dbd"
+            }
+          },
+          {
+            "__guid": "99db6d90-bc23-4d50-859c-8943f5dcbe8f",
+            "__version": 2,
+            "__Prefab": "city stuff/rpgpp_av/prefabs/structures/individual parts/rpgpp_av_wall_03_3x3_b.prefab",
+            "__PrefabInstancePatch": {
+              "AddedObjects": [],
+              "RemovedObjects": [],
+              "PropertyOverrides": [
+                {
+                  "Target": {
+                    "Type": "GameObject",
+                    "IdValue": "c5352774-ee22-481f-9c65-5ae55f37037c"
+                  },
+                  "Property": "Position",
+                  "Value": "-1157.54724,-2532.13062,-349.604889"
+                },
+                {
+                  "Target": {
+                    "Type": "GameObject",
+                    "IdValue": "c5352774-ee22-481f-9c65-5ae55f37037c"
+                  },
+                  "Property": "Enabled",
+                  "Value": false
+                }
+              ],
+              "MovedObjects": []
+            },
+            "__PrefabIdToInstanceId": {
+              "c5352774-ee22-481f-9c65-5ae55f37037c": "99db6d90-bc23-4d50-859c-8943f5dcbe8f",
+              "d351d5cd-f4e0-4197-b7d9-105005c5b172": "468e6398-4458-4b8a-b16b-96ce2bccf5fe",
+              "d88efaf4-0009-4954-b1c1-547d020ba9ed": "e8d3f680-6ec4-4946-91f3-6952e9abb806"
+            }
+          },
+          {
+            "__guid": "e94266b3-95b2-432d-a9e9-7f12e9ce188e",
+            "__version": 2,
+            "__Prefab": "city stuff/rpgpp_av/prefabs/structures/individual parts/rpgpp_av_wall_03_3x3_c.prefab",
+            "__PrefabInstancePatch": {
+              "AddedObjects": [],
+              "RemovedObjects": [],
+              "PropertyOverrides": [
+                {
+                  "Target": {
+                    "Type": "GameObject",
+                    "IdValue": "298999c9-d965-4a7e-8fb7-94ff5077b252"
+                  },
+                  "Property": "Position",
+                  "Value": "-1157.54724,-2532.13062,-349.604889"
+                },
+                {
+                  "Target": {
+                    "Type": "GameObject",
+                    "IdValue": "298999c9-d965-4a7e-8fb7-94ff5077b252"
+                  },
+                  "Property": "Enabled",
+                  "Value": false
+                }
+              ],
+              "MovedObjects": []
+            },
+            "__PrefabIdToInstanceId": {
+              "298999c9-d965-4a7e-8fb7-94ff5077b252": "e94266b3-95b2-432d-a9e9-7f12e9ce188e",
+              "39c6fea6-18dc-4b7a-8bfc-f524f7d4a9cc": "fe47243f-7c7c-48f3-a08b-8060dcfc4f1a",
+              "57a2767f-086a-4254-b5d3-6ed94841d020": "47691604-73fc-437f-9947-93c1871fa802"
+            }
+          },
+          {
+            "__guid": "f996787e-5d76-4abe-820b-180873d0aedf",
+            "__version": 2,
+            "__Prefab": "city stuff/rpgpp_av/prefabs/structures/individual parts/rpgpp_av_wall_03_3x3_d.prefab",
+            "__PrefabInstancePatch": {
+              "AddedObjects": [],
+              "RemovedObjects": [],
+              "PropertyOverrides": [
+                {
+                  "Target": {
+                    "Type": "GameObject",
+                    "IdValue": "cbc81871-811e-49c8-b823-cbd84841dfcc"
+                  },
+                  "Property": "Position",
+                  "Value": "-1157.54724,-2532.13062,-349.604889"
+                },
+                {
+                  "Target": {
+                    "Type": "GameObject",
+                    "IdValue": "cbc81871-811e-49c8-b823-cbd84841dfcc"
+                  },
+                  "Property": "Enabled",
+                  "Value": false
+                }
+              ],
+              "MovedObjects": []
+            },
+            "__PrefabIdToInstanceId": {
+              "cbc81871-811e-49c8-b823-cbd84841dfcc": "f996787e-5d76-4abe-820b-180873d0aedf",
+              "32d00649-a485-472e-9264-c0e916c27f13": "d5de0fb4-f367-487d-ba59-6c28200fa9c8",
+              "d12dc000-a3fe-4129-86c9-4ba2352592a6": "17ad19be-3f78-4a58-8382-0772140680e2"
+            }
+          },
+          {
+            "__guid": "0dd83024-84ce-43d0-ade2-51d9ac87e15c",
+            "__version": 2,
+            "__Prefab": "city stuff/rpgpp_av/prefabs/structures/individual parts/rpgpp_av_wall_03_3x3_e.prefab",
+            "__PrefabInstancePatch": {
+              "AddedObjects": [],
+              "RemovedObjects": [],
+              "PropertyOverrides": [
+                {
+                  "Target": {
+                    "Type": "GameObject",
+                    "IdValue": "f403ad12-cda6-4b38-9a54-615966bb8154"
+                  },
+                  "Property": "Position",
+                  "Value": "-1157.54724,-2532.13062,-349.604889"
+                },
+                {
+                  "Target": {
+                    "Type": "GameObject",
+                    "IdValue": "f403ad12-cda6-4b38-9a54-615966bb8154"
+                  },
+                  "Property": "Enabled",
+                  "Value": false
+                }
+              ],
+              "MovedObjects": []
+            },
+            "__PrefabIdToInstanceId": {
+              "f403ad12-cda6-4b38-9a54-615966bb8154": "0dd83024-84ce-43d0-ade2-51d9ac87e15c",
+              "05d929d9-c215-4114-bf01-62bb4c26a0b1": "57296036-4677-41fd-838b-b0d21d58e9c9",
+              "cf3f9937-eb1d-4d55-b104-3486aa565802": "e54c0196-4704-4cec-ae7b-5436fde7e70f"
+            }
+          },
+          {
+            "__guid": "b64bb87f-e033-4551-bff3-7885d01b03d2",
+            "__version": 2,
+            "__Prefab": "city stuff/rpgpp_av/prefabs/structures/individual parts/rpgpp_av_wall_03_3x3_f.prefab",
+            "__PrefabInstancePatch": {
+              "AddedObjects": [],
+              "RemovedObjects": [],
+              "PropertyOverrides": [
+                {
+                  "Target": {
+                    "Type": "GameObject",
+                    "IdValue": "c82e3dd2-cec2-411c-b09f-9a4cb0b1e6f7"
+                  },
+                  "Property": "Position",
+                  "Value": "-1157.54724,-2532.13062,-349.604889"
+                },
+                {
+                  "Target": {
+                    "Type": "GameObject",
+                    "IdValue": "c82e3dd2-cec2-411c-b09f-9a4cb0b1e6f7"
+                  },
+                  "Property": "Enabled",
+                  "Value": false
+                }
+              ],
+              "MovedObjects": []
+            },
+            "__PrefabIdToInstanceId": {
+              "c82e3dd2-cec2-411c-b09f-9a4cb0b1e6f7": "b64bb87f-e033-4551-bff3-7885d01b03d2",
+              "32170541-8a3e-4b31-a808-4064be9223b0": "d5c12313-da84-4f7f-aae8-5ecaccecb51c",
+              "164181cd-a637-4841-ad8a-ab30fd4a0ae4": "7388ca01-7f6d-4d31-929e-c4341338b515"
+            }
+          }
+        ]
+      },
+      {
+        "__guid": "4bb46779-d130-4248-8adb-648e30b35d20",
+        "__version": 2,
+        "Flags": 0,
+        "Name": "rpgpp_av_wall_04_3x3",
+        "Position": "0,0,0",
+        "Rotation": "0,0,0,1",
+        "Scale": "1,1,1",
+        "Tags": "",
+        "Enabled": false,
+        "NetworkMode": 2,
+        "NetworkFlags": 0,
+        "NetworkOrphaned": 0,
+        "NetworkTransmit": true,
+        "OwnerTransfer": 1,
+        "Components": [],
+        "Children": [
+          {
+            "__guid": "68e5bee2-0548-4290-a96f-ce44329081f4",
+            "__version": 2,
+            "__Prefab": "city stuff/rpgpp_av/prefabs/structures/individual parts/rpgpp_av_wall_04_3x3_b.prefab",
+            "__PrefabInstancePatch": {
+              "AddedObjects": [],
+              "RemovedObjects": [],
+              "PropertyOverrides": [
+                {
+                  "Target": {
+                    "Type": "GameObject",
+                    "IdValue": "231b7c81-128c-4451-982e-d65126cf324f"
+                  },
+                  "Property": "Position",
+                  "Value": "-1157.54724,-2532.13062,-349.604889"
+                },
+                {
+                  "Target": {
+                    "Type": "GameObject",
+                    "IdValue": "231b7c81-128c-4451-982e-d65126cf324f"
+                  },
+                  "Property": "Enabled",
+                  "Value": false
+                }
+              ],
+              "MovedObjects": []
+            },
+            "__PrefabIdToInstanceId": {
+              "231b7c81-128c-4451-982e-d65126cf324f": "68e5bee2-0548-4290-a96f-ce44329081f4",
+              "64a18736-d357-43da-ad12-d0c6ba83857b": "80212678-03da-4a6d-9193-6d113f1257b1",
+              "70856ce0-69b2-4d06-beab-9eac498489e9": "76215f7a-f22e-40f2-ab8d-13cc55450d36"
+            }
+          },
+          {
+            "__guid": "52179a71-f634-4687-b0b8-9de7674b5594",
+            "__version": 2,
+            "__Prefab": "city stuff/rpgpp_av/prefabs/structures/individual parts/rpgpp_av_wall_04_3x3_c.prefab",
+            "__PrefabInstancePatch": {
+              "AddedObjects": [],
+              "RemovedObjects": [],
+              "PropertyOverrides": [
+                {
+                  "Target": {
+                    "Type": "GameObject",
+                    "IdValue": "e687611b-b2b3-44b6-89b6-117aa6a7bd33"
+                  },
+                  "Property": "Position",
+                  "Value": "-1157.54724,-2532.13062,-349.604889"
+                },
+                {
+                  "Target": {
+                    "Type": "GameObject",
+                    "IdValue": "e687611b-b2b3-44b6-89b6-117aa6a7bd33"
+                  },
+                  "Property": "Enabled",
+                  "Value": false
+                }
+              ],
+              "MovedObjects": []
+            },
+            "__PrefabIdToInstanceId": {
+              "e687611b-b2b3-44b6-89b6-117aa6a7bd33": "52179a71-f634-4687-b0b8-9de7674b5594",
+              "89b68ec5-094a-4484-84b9-8f005be5d0b3": "b1343edb-0337-4704-9d03-6a28f61ba144",
+              "05e8004e-fafe-4847-becc-f65623629ade": "53532f3b-498f-4f1a-8805-35493922f5d4"
+            }
+          },
+          {
+            "__guid": "f660a54a-f356-4743-800f-7861f8f46005",
+            "__version": 2,
+            "__Prefab": "city stuff/rpgpp_av/prefabs/structures/individual parts/rpgpp_av_wall_04_3x3_d.prefab",
+            "__PrefabInstancePatch": {
+              "AddedObjects": [],
+              "RemovedObjects": [],
+              "PropertyOverrides": [
+                {
+                  "Target": {
+                    "Type": "GameObject",
+                    "IdValue": "9636ccd6-894a-4cb4-a1db-5a9aa7e88741"
+                  },
+                  "Property": "Position",
+                  "Value": "-1157.54724,-2532.13062,-349.604889"
+                },
+                {
+                  "Target": {
+                    "Type": "GameObject",
+                    "IdValue": "9636ccd6-894a-4cb4-a1db-5a9aa7e88741"
+                  },
+                  "Property": "Enabled",
+                  "Value": false
+                }
+              ],
+              "MovedObjects": []
+            },
+            "__PrefabIdToInstanceId": {
+              "9636ccd6-894a-4cb4-a1db-5a9aa7e88741": "f660a54a-f356-4743-800f-7861f8f46005",
+              "b2ad67a1-5252-46e4-bdc6-f61923e77ac5": "54d6a6e5-b483-4a43-a528-5690033828b6",
+              "d26bfc85-f776-4909-907f-f041c896ccac": "9ba4426e-0036-49d1-9a5e-dd630259400d"
+            }
+          },
+          {
+            "__guid": "163527e8-de5d-45b2-83b0-73f7ffbb1436",
+            "__version": 2,
+            "__Prefab": "city stuff/rpgpp_av/prefabs/structures/individual parts/rpgpp_av_wall_04_3x3_e.prefab",
+            "__PrefabInstancePatch": {
+              "AddedObjects": [],
+              "RemovedObjects": [],
+              "PropertyOverrides": [
+                {
+                  "Target": {
+                    "Type": "GameObject",
+                    "IdValue": "adcff36e-5944-4780-9e3c-d334168a2a0b"
+                  },
+                  "Property": "Position",
+                  "Value": "-1157.54724,-2532.13062,-349.604889"
+                },
+                {
+                  "Target": {
+                    "Type": "GameObject",
+                    "IdValue": "adcff36e-5944-4780-9e3c-d334168a2a0b"
+                  },
+                  "Property": "Enabled",
+                  "Value": false
+                }
+              ],
+              "MovedObjects": []
+            },
+            "__PrefabIdToInstanceId": {
+              "adcff36e-5944-4780-9e3c-d334168a2a0b": "163527e8-de5d-45b2-83b0-73f7ffbb1436",
+              "2a9985ac-56a4-4334-8297-8f343d5da54e": "5d578431-b3e1-472a-a909-d5d096db1d49",
+              "2a350763-2eaa-4164-abeb-158ad24bed22": "83fe33e8-5a5a-40ba-a3ef-15c418eb5aa6"
+            }
+          },
+          {
+            "__guid": "10be1a04-0810-4965-9fa4-53d0f248f1b1",
+            "__version": 2,
+            "__Prefab": "city stuff/rpgpp_av/prefabs/structures/individual parts/rpgpp_av_wall_04_3x3_f.prefab",
+            "__PrefabInstancePatch": {
+              "AddedObjects": [],
+              "RemovedObjects": [],
+              "PropertyOverrides": [
+                {
+                  "Target": {
+                    "Type": "GameObject",
+                    "IdValue": "b664500d-ee95-41e4-b1f2-a6e543545657"
+                  },
+                  "Property": "Position",
+                  "Value": "-1157.54724,-2532.13062,-349.604889"
+                },
+                {
+                  "Target": {
+                    "Type": "GameObject",
+                    "IdValue": "b664500d-ee95-41e4-b1f2-a6e543545657"
+                  },
+                  "Property": "Enabled",
+                  "Value": false
+                }
+              ],
+              "MovedObjects": []
+            },
+            "__PrefabIdToInstanceId": {
+              "b664500d-ee95-41e4-b1f2-a6e543545657": "10be1a04-0810-4965-9fa4-53d0f248f1b1",
+              "d366ef7b-6446-4ed2-aa13-3bcba8eddbeb": "dee5fcf4-e205-4569-bc20-1a8b9a1fc691",
+              "5ea6d22a-bfad-4dc0-b398-8333bdc2f50b": "c6997fe8-981b-44b7-aadd-0ef59e4b64f7"
+            }
+          }
+        ]
+      },
+      {
+        "__guid": "cf20210e-f905-44f5-b453-b645f0317563",
+        "__version": 2,
+        "Flags": 0,
+        "Name": "rpgpp_av_roof_end_6x3_wall",
+        "Position": "0,0,0",
+        "Rotation": "0,0,0,1",
+        "Scale": "1,1,1",
+        "Tags": "",
+        "Enabled": false,
+        "NetworkMode": 2,
+        "NetworkFlags": 0,
+        "NetworkOrphaned": 0,
+        "NetworkTransmit": true,
+        "OwnerTransfer": 1,
+        "Components": [],
+        "Children": [
+          {
+            "__guid": "0d30a9ea-b743-418a-aeb8-69d2926e58a1",
+            "__version": 2,
+            "Flags": 0,
+            "Name": "rpgpp_av_roof_end_01_6x3_wall_01a",
+            "Position": "0,0,0",
+            "Rotation": "0,0,0,1",
+            "Scale": "0.400000006,0.400000006,0.400000006",
+            "Tags": "",
+            "Enabled": false,
+            "NetworkMode": 2,
+            "NetworkFlags": 0,
+            "NetworkOrphaned": 0,
+            "NetworkTransmit": true,
+            "OwnerTransfer": 1,
+            "Components": [
+              {
+                "__type": "Sandbox.ModelRenderer",
+                "__guid": "3617729d-25a8-4ca0-b6aa-0c122c7ef806",
+                "__enabled": true,
+                "Flags": 0,
+                "BodyGroups": 18446744073709551615,
+                "CreateAttachments": false,
+                "LodOverride": null,
+                "MaterialGroup": null,
+                "MaterialOverride": null,
+                "Materials": null,
+                "Model": "city stuff/rpgpp_av/models/structures/rpgpp_av_roof_end_01_6x3_wall_01a.vmdl",
+                "OnComponentDestroy": null,
+                "OnComponentDisabled": null,
+                "OnComponentEnabled": null,
+                "OnComponentFixedUpdate": null,
+                "OnComponentStart": null,
+                "OnComponentUpdate": null,
+                "RenderOptions": {
+                  "GameLayer": true,
+                  "OverlayLayer": false,
+                  "BloomLayer": false,
+                  "AfterUILayer": false
+                },
+                "RenderType": "On",
+                "Tint": "1,1,1,1"
+              },
+              {
+                "__type": "TNCBG.MaffinModelCollider",
+                "__guid": "3c3200ea-d506-43ef-8c0e-75aae160ab6b",
+                "__enabled": true,
+                "Flags": 0,
+                "ColliderFlags": 0,
+                "Elasticity": null,
+                "Friction": null,
+                "IsTrigger": false,
+                "Model": null,
+                "OnComponentDestroy": null,
+                "OnComponentDisabled": null,
+                "OnComponentEnabled": null,
+                "OnComponentFixedUpdate": null,
+                "OnComponentStart": null,
+                "OnComponentUpdate": null,
+                "OnObjectTriggerEnter": null,
+                "OnObjectTriggerExit": null,
+                "OnTriggerEnter": null,
+                "OnTriggerExit": null,
+                "RollingResistance": null,
+                "Static": true,
+                "Surface": null,
+                "SurfaceVelocity": "0,0,0"
+              }
+            ],
+            "Children": []
+          },
+          {
+            "__guid": "7c01c8e1-2367-4c81-bde9-61ddd2979437",
+            "__version": 2,
+            "Flags": 0,
+            "Name": "rpgpp_av_roof_end_01_6x3_wall_01b",
+            "Position": "0,0,0",
+            "Rotation": "0,0,0,1",
+            "Scale": "0.400000006,0.400000006,0.400000006",
+            "Tags": "",
+            "Enabled": false,
+            "NetworkMode": 2,
+            "NetworkFlags": 0,
+            "NetworkOrphaned": 0,
+            "NetworkTransmit": true,
+            "OwnerTransfer": 1,
+            "Components": [
+              {
+                "__type": "Sandbox.ModelRenderer",
+                "__guid": "20ba78ce-9004-4300-bef1-a716dc28cf99",
+                "__enabled": true,
+                "Flags": 0,
+                "BodyGroups": 18446744073709551615,
+                "CreateAttachments": false,
+                "LodOverride": null,
+                "MaterialGroup": null,
+                "MaterialOverride": null,
+                "Materials": null,
+                "Model": "city stuff/rpgpp_av/models/structures/rpgpp_av_roof_end_01_6x3_wall_01b.vmdl",
+                "OnComponentDestroy": null,
+                "OnComponentDisabled": null,
+                "OnComponentEnabled": null,
+                "OnComponentFixedUpdate": null,
+                "OnComponentStart": null,
+                "OnComponentUpdate": null,
+                "RenderOptions": {
+                  "GameLayer": true,
+                  "OverlayLayer": false,
+                  "BloomLayer": false,
+                  "AfterUILayer": false
+                },
+                "RenderType": "On",
+                "Tint": "1,1,1,1"
+              },
+              {
+                "__type": "TNCBG.MaffinModelCollider",
+                "__guid": "2032bcef-6b9a-4a3d-8f09-09ba4204cee6",
+                "__enabled": true,
+                "Flags": 0,
+                "ColliderFlags": 0,
+                "Elasticity": null,
+                "Friction": null,
+                "IsTrigger": false,
+                "Model": null,
+                "OnComponentDestroy": null,
+                "OnComponentDisabled": null,
+                "OnComponentEnabled": null,
+                "OnComponentFixedUpdate": null,
+                "OnComponentStart": null,
+                "OnComponentUpdate": null,
+                "OnObjectTriggerEnter": null,
+                "OnObjectTriggerExit": null,
+                "OnTriggerEnter": null,
+                "OnTriggerExit": null,
+                "RollingResistance": null,
+                "Static": true,
+                "Surface": null,
+                "SurfaceVelocity": "0,0,0"
+              }
+            ],
+            "Children": []
+          },
+          {
+            "__guid": "ff7152db-d69b-4523-b251-fabcd772927d",
+            "__version": 2,
+            "Flags": 0,
+            "Name": "rpgpp_av_roof_end_01_6x3_wall_02a",
+            "Position": "0,0,0",
+            "Rotation": "0,0,0,1",
+            "Scale": "0.400000006,0.400000006,0.400000006",
+            "Tags": "",
+            "Enabled": false,
+            "NetworkMode": 2,
+            "NetworkFlags": 0,
+            "NetworkOrphaned": 0,
+            "NetworkTransmit": true,
+            "OwnerTransfer": 1,
+            "Components": [
+              {
+                "__type": "Sandbox.ModelRenderer",
+                "__guid": "ce556248-beee-4ba4-9a16-6f13c269e89b",
+                "__enabled": true,
+                "Flags": 0,
+                "BodyGroups": 18446744073709551615,
+                "CreateAttachments": false,
+                "LodOverride": null,
+                "MaterialGroup": null,
+                "MaterialOverride": null,
+                "Materials": null,
+                "Model": "city stuff/rpgpp_av/models/structures/rpgpp_av_roof_end_01_6x3_wall_02a.vmdl",
+                "OnComponentDestroy": null,
+                "OnComponentDisabled": null,
+                "OnComponentEnabled": null,
+                "OnComponentFixedUpdate": null,
+                "OnComponentStart": null,
+                "OnComponentUpdate": null,
+                "RenderOptions": {
+                  "GameLayer": true,
+                  "OverlayLayer": false,
+                  "BloomLayer": false,
+                  "AfterUILayer": false
+                },
+                "RenderType": "On",
+                "Tint": "1,1,1,1"
+              },
+              {
+                "__type": "TNCBG.MaffinModelCollider",
+                "__guid": "2767f8aa-6b85-456e-b4ab-3b2b07fa521a",
+                "__enabled": true,
+                "Flags": 0,
+                "ColliderFlags": 0,
+                "Elasticity": null,
+                "Friction": null,
+                "IsTrigger": false,
+                "Model": null,
+                "OnComponentDestroy": null,
+                "OnComponentDisabled": null,
+                "OnComponentEnabled": null,
+                "OnComponentFixedUpdate": null,
+                "OnComponentStart": null,
+                "OnComponentUpdate": null,
+                "OnObjectTriggerEnter": null,
+                "OnObjectTriggerExit": null,
+                "OnTriggerEnter": null,
+                "OnTriggerExit": null,
+                "RollingResistance": null,
+                "Static": true,
+                "Surface": null,
+                "SurfaceVelocity": "0,0,0"
+              }
+            ],
+            "Children": []
+          },
+          {
+            "__guid": "a5a26745-e154-4a1c-9076-01cddd41c706",
+            "__version": 2,
+            "Flags": 0,
+            "Name": "rpgpp_av_roof_end_01_6x3_wall_02b",
+            "Position": "0,0,0",
+            "Rotation": "0,0,0,1",
+            "Scale": "0.400000006,0.400000006,0.400000006",
+            "Tags": "",
+            "Enabled": false,
+            "NetworkMode": 2,
+            "NetworkFlags": 0,
+            "NetworkOrphaned": 0,
+            "NetworkTransmit": true,
+            "OwnerTransfer": 1,
+            "Components": [
+              {
+                "__type": "Sandbox.ModelRenderer",
+                "__guid": "a9014e8b-cfe6-4106-8e80-b160095e8b0f",
+                "__enabled": true,
+                "Flags": 0,
+                "BodyGroups": 18446744073709551615,
+                "CreateAttachments": false,
+                "LodOverride": null,
+                "MaterialGroup": null,
+                "MaterialOverride": null,
+                "Materials": null,
+                "Model": "city stuff/rpgpp_av/models/structures/rpgpp_av_roof_end_01_6x3_wall_02b.vmdl",
+                "OnComponentDestroy": null,
+                "OnComponentDisabled": null,
+                "OnComponentEnabled": null,
+                "OnComponentFixedUpdate": null,
+                "OnComponentStart": null,
+                "OnComponentUpdate": null,
+                "RenderOptions": {
+                  "GameLayer": true,
+                  "OverlayLayer": false,
+                  "BloomLayer": false,
+                  "AfterUILayer": false
+                },
+                "RenderType": "On",
+                "Tint": "1,1,1,1"
+              },
+              {
+                "__type": "TNCBG.MaffinModelCollider",
+                "__guid": "2455380a-ddb8-43d9-8f3d-9cecd0c73630",
+                "__enabled": true,
+                "Flags": 0,
+                "ColliderFlags": 0,
+                "Elasticity": null,
+                "Friction": null,
+                "IsTrigger": false,
+                "Model": null,
+                "OnComponentDestroy": null,
+                "OnComponentDisabled": null,
+                "OnComponentEnabled": null,
+                "OnComponentFixedUpdate": null,
+                "OnComponentStart": null,
+                "OnComponentUpdate": null,
+                "OnObjectTriggerEnter": null,
+                "OnObjectTriggerExit": null,
+                "OnTriggerEnter": null,
+                "OnTriggerExit": null,
+                "RollingResistance": null,
+                "Static": true,
+                "Surface": null,
+                "SurfaceVelocity": "0,0,0"
+              }
+            ],
+            "Children": []
+          },
+          {
+            "__guid": "89b3972f-e40b-4ca7-96e9-1e4e2aee2890",
+            "__version": 2,
+            "Flags": 0,
+            "Name": "rpgpp_av_roof_end_01_6x3_wall_03a",
+            "Position": "0,0,0",
+            "Rotation": "0,0,0,1",
+            "Scale": "0.400000006,0.400000006,0.400000006",
+            "Tags": "",
+            "Enabled": false,
+            "NetworkMode": 2,
+            "NetworkFlags": 0,
+            "NetworkOrphaned": 0,
+            "NetworkTransmit": true,
+            "OwnerTransfer": 1,
+            "Components": [
+              {
+                "__type": "Sandbox.ModelRenderer",
+                "__guid": "a0095c53-e083-4739-bf96-d32d4c18830b",
+                "__enabled": true,
+                "Flags": 0,
+                "BodyGroups": 18446744073709551615,
+                "CreateAttachments": false,
+                "LodOverride": null,
+                "MaterialGroup": null,
+                "MaterialOverride": null,
+                "Materials": null,
+                "Model": "city stuff/rpgpp_av/models/structures/rpgpp_av_roof_end_01_6x3_wall_03a.vmdl",
+                "OnComponentDestroy": null,
+                "OnComponentDisabled": null,
+                "OnComponentEnabled": null,
+                "OnComponentFixedUpdate": null,
+                "OnComponentStart": null,
+                "OnComponentUpdate": null,
+                "RenderOptions": {
+                  "GameLayer": true,
+                  "OverlayLayer": false,
+                  "BloomLayer": false,
+                  "AfterUILayer": false
+                },
+                "RenderType": "On",
+                "Tint": "1,1,1,1"
+              },
+              {
+                "__type": "TNCBG.MaffinModelCollider",
+                "__guid": "b707fa30-1c1f-400b-a25b-42953c5059c5",
+                "__enabled": true,
+                "Flags": 0,
+                "ColliderFlags": 0,
+                "Elasticity": null,
+                "Friction": null,
+                "IsTrigger": false,
+                "Model": null,
+                "OnComponentDestroy": null,
+                "OnComponentDisabled": null,
+                "OnComponentEnabled": null,
+                "OnComponentFixedUpdate": null,
+                "OnComponentStart": null,
+                "OnComponentUpdate": null,
+                "OnObjectTriggerEnter": null,
+                "OnObjectTriggerExit": null,
+                "OnTriggerEnter": null,
+                "OnTriggerExit": null,
+                "RollingResistance": null,
+                "Static": true,
+                "Surface": null,
+                "SurfaceVelocity": "0,0,0"
+              }
+            ],
+            "Children": []
+          },
+          {
+            "__guid": "b0454067-a0e6-4e30-8571-c2a93f26028d",
+            "__version": 2,
+            "Flags": 0,
+            "Name": "rpgpp_av_roof_end_01_6x3_wall_04a",
+            "Position": "0,0,0",
+            "Rotation": "0,0,0,1",
+            "Scale": "0.400000006,0.400000006,0.400000006",
+            "Tags": "",
+            "Enabled": false,
+            "NetworkMode": 2,
+            "NetworkFlags": 0,
+            "NetworkOrphaned": 0,
+            "NetworkTransmit": true,
+            "OwnerTransfer": 1,
+            "Components": [
+              {
+                "__type": "Sandbox.ModelRenderer",
+                "__guid": "c7806fe5-3947-45dc-a4ad-6e7bc1004d41",
+                "__enabled": true,
+                "Flags": 0,
+                "BodyGroups": 18446744073709551615,
+                "CreateAttachments": false,
+                "LodOverride": null,
+                "MaterialGroup": null,
+                "MaterialOverride": null,
+                "Materials": null,
+                "Model": "city stuff/rpgpp_av/models/structures/rpgpp_av_roof_end_01_6x3_wall_04a.vmdl",
+                "OnComponentDestroy": null,
+                "OnComponentDisabled": null,
+                "OnComponentEnabled": null,
+                "OnComponentFixedUpdate": null,
+                "OnComponentStart": null,
+                "OnComponentUpdate": null,
+                "RenderOptions": {
+                  "GameLayer": true,
+                  "OverlayLayer": false,
+                  "BloomLayer": false,
+                  "AfterUILayer": false
+                },
+                "RenderType": "On",
+                "Tint": "1,1,1,1"
+              },
+              {
+                "__type": "TNCBG.MaffinModelCollider",
+                "__guid": "7c8db551-04a4-4672-bd0f-a9d317b3b1ce",
+                "__enabled": true,
+                "Flags": 0,
+                "ColliderFlags": 0,
+                "Elasticity": null,
+                "Friction": null,
+                "IsTrigger": false,
+                "Model": null,
+                "OnComponentDestroy": null,
+                "OnComponentDisabled": null,
+                "OnComponentEnabled": null,
+                "OnComponentFixedUpdate": null,
+                "OnComponentStart": null,
+                "OnComponentUpdate": null,
+                "OnObjectTriggerEnter": null,
+                "OnObjectTriggerExit": null,
+                "OnTriggerEnter": null,
+                "OnTriggerExit": null,
+                "RollingResistance": null,
+                "Static": true,
+                "Surface": null,
+                "SurfaceVelocity": "0,0,0"
+              }
+            ],
+            "Children": []
+          }
+        ]
+      }
+    ],
+    "__properties": {
+      "NetworkInterpolation": true,
+      "TimeScale": 1,
+      "WantsSystemScene": true,
+      "Metadata": {},
+      "NavMesh": {
+        "Enabled": false,
+        "IncludeStaticBodies": true,
+        "IncludeKeyframedBodies": true,
+        "EditorAutoUpdate": false,
+        "AgentHeight": 64,
+        "AgentRadius": 16,
+        "AgentStepSize": 18,
+        "AgentMaxSlope": 40,
+        "ExcludedBodies": "",
+        "IncludedBodies": "",
+        "DeferGeneration": false,
+        "CustomBounds": false
+      }
+    },
+    "__variables": []
+  },
+  "ResourceVersion": 2,
+  "ShowInMenu": false,
+  "MenuPath": null,
+  "MenuIcon": null,
+  "DontBreakAsTemplate": false,
+  "__references": [],
+  "__version": 2
+}

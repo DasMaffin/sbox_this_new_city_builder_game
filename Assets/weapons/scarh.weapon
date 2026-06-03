@@ -1,0 +1,16 @@
+{
+  "ClassName": null,
+  "Name": null,
+  "Icon": null,
+  "HoldType": "None",
+  "BulletCocking": false,
+  "TuckRange": 30,
+  "Mobility": 1,
+  "ReloadSpeed": 1,
+  "Hands": null,
+  "ViewModel": null,
+  "WorldModel": null,
+  "FiringInfo": {},
+  "__references": [],
+  "__version": 0
+}

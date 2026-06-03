@@ -1,0 +1,38 @@
+{
+  "Entries": [
+    {
+      "Prefab": null,
+      "Model": "city stuff/rpgpp_av/models/nature/foliage/rpgpp_av_grass_small_01a.vmdl",
+      "Weight": 1,
+      "HasAsset": true,
+      "AssetName": "city stuff/rpgpp_av/models/nature/foliage/rpgpp_av_grass_small_01a.vmdl"
+    },
+    {
+      "Prefab": null,
+      "Model": "city stuff/rpgpp_av/models/nature/foliage/rpgpp_av_grass_small_01b.vmdl",
+      "Weight": 1,
+      "HasAsset": true,
+      "AssetName": "city stuff/rpgpp_av/models/nature/foliage/rpgpp_av_grass_small_01b.vmdl"
+    },
+    {
+      "Prefab": null,
+      "Model": "city stuff/rpgpp_av/models/nature/foliage/rpgpp_av_grass_small_01c.vmdl",
+      "Weight": 1,
+      "HasAsset": true,
+      "AssetName": "city stuff/rpgpp_av/models/nature/foliage/rpgpp_av_grass_small_01c.vmdl"
+    }
+  ],
+  "IsEmpty": false,
+  "TileSizeEnum": "Size256",
+  "TileRadius": 10,
+  "Scatterer": {
+    "Type": "SimpleScatterer",
+    "Scale": "0.200000003 0.300000012",
+    "Density": 4,
+    "PlaceOnGround": true,
+    "HeightOffset": 0,
+    "AlignToNormal": true
+  },
+  "__references": [],
+  "__version": 0
+}

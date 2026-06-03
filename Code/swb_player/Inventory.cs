@@ -1,6 +1,12 @@
 ﻿using SWB.Shared;
+using System;
 
 namespace SWB.Player;
+
+public interface IWeaponSwitch : ISceneEvent<IWeaponSwitch>
+{
+	void OnWeaponSwitched(IInventory inventory, GameObject go, IInventoryItem item);
+}
 
 public class Inventory : Component, IInventory
 {
@@ -48,7 +54,7 @@ public class Inventory : Component, IInventory
 
 	public void SetActive( GameObject gameObject )
 	{
-		if ( !Has( gameObject ) || Active == gameObject ) return;
+		if ( gameObject != null && !Has( gameObject ) ) return;
 
 		if ( Active is not null && Active.Components.TryGet<IInventoryItem>( out var oldActive ) )
 		{
@@ -56,13 +62,22 @@ public class Inventory : Component, IInventory
 			oldActive.OnCarryStop();
 		}
 
-		if ( gameObject.Components.TryGet<IInventoryItem>( out var newActive, FindMode.EverythingInSelf ) )
+		if( gameObject == null || Active == gameObject )
 		{
-			newActive.OnCarryStart();
+			Active = null;
+			ActiveItem = null;
 		}
+		else
+		{
+			if ( gameObject.Components.TryGet<IInventoryItem>( out var newActive, FindMode.EverythingInSelf ) )
+			{
+				newActive.OnCarryStart();
+			}
 
-		Active = gameObject;
-		ActiveItem = newActive;
+			Active = gameObject;
+			ActiveItem = newActive;
+		}
+		IWeaponSwitch.Post( x => x.OnWeaponSwitched( this, Active, ActiveItem ) );
 	}
 
 	public void SetActive( string name )

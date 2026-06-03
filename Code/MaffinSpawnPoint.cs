@@ -7,17 +7,23 @@ namespace TNCBG;
 public sealed class MaffinSpawnPoint : Component
 {
 	[Property, Change( nameof( Snap ) )] public bool RefreshInEditor { get; set; }
-	[Property] public LowPolyTerrain Terrain { get; set; }
+
+	protected override void OnAwake()
+	{
+		Snap();
+	}
 
 	private void Snap()
 	{
 		var go = this.GameObject;
+		var from = go.WorldPosition.WithZ( 10000f );
+		var to = go.WorldPosition.WithZ( -10000f );
 
-		float nx = (go.WorldPosition.x + Terrain.Offset.x) / Terrain.Scale;
-		float nz = (go.WorldPosition.y + Terrain.Offset.y) / Terrain.Scale;
-		float z = Noise.Perlin( nx, nz ) * Terrain.HeightMultiplier * Terrain.QuadSize;
+		var hit = Scene.Trace.Ray( from, to )
+			.WithTag( "terrain" )
+			.Run();
 
-		go.WorldPosition = new Vector3( go.WorldPosition.x, go.WorldPosition.y, z );
-		go.SetParent( Scene );
+		if ( hit.Hit )
+			go.WorldPosition = hit.HitPosition;
 	}
 }

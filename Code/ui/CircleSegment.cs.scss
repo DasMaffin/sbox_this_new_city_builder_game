@@ -1,0 +1,19 @@
+.circle-segment {
+	transition: filter 0.15s ease;
+	pointer-events: all;
+	position: absolute;
+	width: 300px;
+	height: 300px;
+	transform: translateX(-50%) translateY(-50%);
+
+	.name {
+		position: absolute;
+		top: 4px;
+		left: 8px;
+		text-align: left;
+		font-size: 50px;
+		font-family: FONTSPRING DEMO - Integral CF;
+		text-transform: uppercase;
+		transform: rotate(135deg);
+	}
+}

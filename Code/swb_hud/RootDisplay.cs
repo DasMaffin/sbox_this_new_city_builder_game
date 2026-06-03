@@ -25,7 +25,6 @@ public class RootDisplay : PanelComponent
 	}
 	private PlayerBase _player;
 
-	Chatbox chatbox;
 	Killfeed killfeed;
 	Hitmarker hitmarker;
 
@@ -56,9 +55,6 @@ public class RootDisplay : PanelComponent
 		Panel.AddChild( new Scoreboard() );
 		Panel.AddChild( new KeyDisplay( _player ) );
 
-		chatbox = new Chatbox( _player );
-		Panel.AddChild( chatbox );
-
 		killfeed = new Killfeed( _player );
 		Panel.AddChild( killfeed );
 
@@ -80,11 +76,6 @@ public class RootDisplay : PanelComponent
 	public void AddToKillFeed( Guid attackerId, Guid victimId, string inflictor )
 	{
 		killfeed?.AddKillEntry( attackerId, victimId, inflictor );
-	}
-
-	public void AddChatEntry( Guid senderId, string msg )
-	{
-		chatbox.AddEntry( senderId, msg );
 	}
 
 	public void CreateHitmarker( bool isKill )

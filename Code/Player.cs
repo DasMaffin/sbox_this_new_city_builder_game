@@ -1,30 +1,46 @@
-using Sandbox;
-using SWB.Base;
-using SWB.Player;
-public class Player : PlayerBase
+using System;
+using TNCBG;
+
+public class Player : Component, ILookTrace
 {
-	[Property] public Connection Owner;
+	public Guid MyCityId { get; set; }
+	public SteamId SteamId { get; set; }
 
-	[Rpc.Host]
-	void GiveWeapon( string className, bool setActive = false )
+	public bool AddToCity(City city)
 	{
-		var weapon = WeaponRegistry.Instance.Get( className );
-
-		if ( weapon is null )
+		if(MyCityId == Guid.Empty )
 		{
-			Log.Error( $"[SWB Demo] {className} not found in WeaponRegistry!" );
-			return;
+			city.AddCitizen( this );
+			MyCityId = city.Id;
+			return true;
 		}
 
-		Inventory.AddClone( weapon.GameObject, setActive );
-		SetAmmo( weapon.Primary.AmmoType, 360 );
+		return false;
 	}
 
-	public override void Respawn(Transform? respawnAt = null)
+	public void OnBuildingBuilt(BuildingController bc)
 	{
-		base.Respawn(respawnAt);
+		switch ( bc.buildingType )
+		{
+			case BuildingType.TownHall:
+				City city = new City( this );
+				foreach ( Connection connection in Connection.All )
+				{
+					if ( connection.PartyId == Connection.Local.PartyId )
+						GameManager.Current.ConnectionToPlayer[connection].AddToCity( city );
+				}
+				GameManager.Current.allCities.Add( city );
+				break;
+			default:
+				break;
+		}
+	}
 
-		GiveWeapon( "maffin_scarh", true );
-		GiveWeapon( "generic_weapon_test");
+	public void OnTraceHit( SceneTraceResult traceResult )
+	{
+		if(Input.Pressed("Use") && traceResult.HasTag( "door" ) )
+		{
+			Log.Info( "Döör!" );
+		}
 	}
 }

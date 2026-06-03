@@ -23,14 +23,14 @@ public interface IPlayerBase : IValid, Sandbox.Component.IDamageable
 	/// The camera to use when renderering the weapon's view model on the client side
 	/// If none is provided and first person mode is enabled, then a camera will be created
 	/// </summary>
-	public CameraComponent? ViewModelCamera { get; set; }
+	public CameraComponent ViewModelCamera { get; set; }
 
 	/// <summary>
 	/// The camera used for rendering the player's first person view
 	/// Used to calculate view model sway
 	/// The Render exclude tag "viewmodel" will be automatically applied to prevent render issues
 	/// </summary>
-	public CameraComponent? Camera { get; }
+	public CameraComponent Camera { get; }
 
 	/// <summary>
 	/// Whether the player is in first person view

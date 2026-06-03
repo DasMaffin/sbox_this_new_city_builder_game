@@ -4,7 +4,6 @@ using SWB.Base;
 using SWB.Player;
 using SWB.Shared;
 using System.Collections.Generic;
-using System.Linq;
 
 namespace SWB.HUD;
 
@@ -43,12 +42,9 @@ public class InventoryDisplay : Panel
 
 		activeItem = player.Inventory.Active?.Components.Get<IInventoryItem>();
 
-		if ( activeItem is not null )
+		foreach ( var entry in itemPanels )
 		{
-			foreach ( var entry in itemPanels )
-			{
-				entry.Value.SetClass( "active", entry.Key == activeItem.Slot );
-			}
+			entry.Value.SetClass( "active", entry.Key == activeItem?.Slot );
 		}
 
 		CheckInput();
@@ -88,7 +84,7 @@ public class InventoryDisplay : Panel
 
 	void CheckInput()
 	{
-		if ( activeItem is null || !activeItem.CanCarryStop() ) return;
+		if ( activeItem != null && !activeItem.CanCarryStop() ) return;
 		if ( Input.Pressed( InputButtonHelper.Slot0 ) ) SwitchItem( 0 );
 		else if ( Input.Pressed( InputButtonHelper.Slot1 ) ) SwitchItem( 1 );
 		else if ( Input.Pressed( InputButtonHelper.Slot2 ) ) SwitchItem( 2 );
@@ -99,6 +95,7 @@ public class InventoryDisplay : Panel
 		else if ( Input.Pressed( InputButtonHelper.Slot7 ) ) SwitchItem( 7 );
 		else if ( Input.Pressed( InputButtonHelper.Slot8 ) ) SwitchItem( 8 );
 		else if ( Input.Pressed( InputButtonHelper.Slot9 ) ) SwitchItem( 9 );
+		if ( GameManager.Current.IsBuilding ) return;
 		else if ( Input.MouseWheel.y > 0 || Input.Pressed( InputButtonHelper.SlotNext ) ) SwitchToNext();
 		else if ( Input.MouseWheel.y < 0 || Input.Pressed( InputButtonHelper.SlotPrev ) ) SwitchToPrev();
 	}
@@ -107,7 +104,7 @@ public class InventoryDisplay : Panel
 	{
 		var sortedItems = items.OrderBy( i => i.Slot );
 		var maxSlotItem = sortedItems.Last();
-		var currSlot = maxSlotItem.Slot == activeItem.Slot ? -1 : activeItem.Slot;
+		var currSlot = maxSlotItem.Slot == (activeItem?.Slot ?? 1) ? -1 : activeItem.Slot;
 
 		foreach ( var item in sortedItems )
 		{
@@ -123,7 +120,7 @@ public class InventoryDisplay : Panel
 	{
 		var sortedItems = items.OrderByDescending( i => i.Slot );
 		var minSlotItem = sortedItems.Last();
-		var currSlot = minSlotItem.Slot == activeItem.Slot ? 10 : activeItem.Slot;
+		var currSlot = minSlotItem.Slot == (activeItem?.Slot ?? 1) ? 10 : activeItem.Slot;
 
 		foreach ( var item in sortedItems )
 		{

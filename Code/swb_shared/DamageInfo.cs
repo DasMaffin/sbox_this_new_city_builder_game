@@ -12,10 +12,10 @@ public class DamageInfo : Sandbox.DamageInfo
 
 	public static DamageInfo FromBullet(
 		GameObject attacker,
-		GameObject? weapon,
-		Hitbox? hitbox,
+		GameObject weapon,
+		Hitbox hitbox,
 		Vector3 Position,
-		PhysicsShape? shape,
+		PhysicsShape shape,
 		string inflictor,
 		float damage,
 		Vector3 origin,

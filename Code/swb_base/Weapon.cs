@@ -72,6 +72,9 @@ public partial class Weapon : Component, IInventoryItem
 
 	protected override void OnDisabled()
 	{
+		if ( Owner is not null )
+			Owner.HoldType = HoldTypes.None;
+
 		if ( IsProxy ) return;
 		if ( ViewModelRenderer?.GameObject is not null )
 			ViewModelRenderer.GameObject.Enabled = false;
@@ -93,9 +96,6 @@ public partial class Weapon : Component, IInventoryItem
 		} );
 
 		ClearState();
-
-		if ( Owner is not null )
-			Owner.HoldType = HoldTypes.None;
 
 		DestroyUI();
 	}

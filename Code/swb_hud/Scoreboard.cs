@@ -4,6 +4,7 @@ using SWB.Player;
 using SWB.Shared;
 using System;
 using System.Linq;
+using TNCBG;
 
 namespace SWB.HUD;
 
@@ -35,7 +36,7 @@ public class Scoreboard : Panel
 
 		foreach ( var player in players )
 		{
-			if ( player is null || !player.IsValid() ) continue;
+			if ( player is null || !player.IsValid() || player.GetComponent<global::Player>().MyCityId == GameManager.Current.ConnectionToPlayer[Connection.Local].MyCityId ) continue;
 
 			var connection = player.Network.Owner;
 			var ping = MathF.Round( (connection?.Ping.CeilToInt() ?? 0) );

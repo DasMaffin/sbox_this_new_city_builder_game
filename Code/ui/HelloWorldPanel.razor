@@ -1,0 +1,13 @@
+@namespace MyGame.UI
+@inherits PanelComponent
+
+<root>
+    <button onclick=@OnClick>Hello World</button>
+</root>
+
+@code {
+    void OnClick()
+    {
+        Log.Info( "Hello World!" );
+    }
+}

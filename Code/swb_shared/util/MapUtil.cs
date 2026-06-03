@@ -11,10 +11,9 @@ public static class MapUtil
 {
 	public static void TagLights()
 	{
-		var mapInstance = Game.ActiveScene.GetComponentInChildren<MapInstance>();
-		var envProbes = mapInstance?.GetComponentsInChildren<EnvmapProbe>();
+		var envProbes = Game.ActiveScene.GetComponentsInChildren<EnvmapProbe>();
 
-		if ( envProbes != null && envProbes.Count() > 0 )
+		if ( envProbes.Count() > 0 )
 			TagLights( envProbes );
 	}
 

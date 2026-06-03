@@ -45,7 +45,7 @@ public class DemoPlayer : PlayerBase
 		//GiveWeapon( "swb_remington" );
 		//GiveWeapon( "swb_veresk" );
 		GiveWeapon( "maffin_scarh", true );
-		//GiveWeapon( "swb_l96a1" );
+		//GiveWeapon( "maffin_scarh2" );
 	}
 
 	public override void OnDeath( Shared.DamageInfo info )
@@ -97,8 +97,8 @@ public class DemoPlayer : PlayerBase
 			var localPly = PlayerBase.Local;
 			if ( localPly is null || !localPly.IsAlive ) return;
 
-			var activeWep = localPly.Inventory.Active.GetComponent<Weapon>();
-			if ( !activeWep.IsScoping && !activeWep.IsAiming )
+			var activeWep = localPly.Inventory.Active?.GetComponent<Weapon>();
+			if ( activeWep == null || (!activeWep.IsScoping && !activeWep.IsAiming) )
 			{
 				ConsoleSystem.Run( "thirdperson" );
 				timeSincePerspectiveSwitch = 0;

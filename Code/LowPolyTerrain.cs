@@ -1,8 +1,11 @@
 using Sandbox;
+using Sandbox.Mapping;
 using Sandbox.Utility;
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Runtime.InteropServices;
+using static Sandbox.PhysicsGroupDescription.BodyPart;
 
 [Title( "Low Poly Terrain" )]
 public class LowPolyTerrain : Component
@@ -14,16 +17,18 @@ public class LowPolyTerrain : Component
 	[Property, Change( "GenerateMesh" )] public float HeightMultiplier { get; set; } = 2f;
 	[Property, Range( 0f, 1f ), Change( "GenerateMesh" )] public float ShadingIntensity { get; set; } = 0.3f;
 	[Property, Change( "GenerateMesh" )] public Color TerrainColor { get; set; } = new Color( 0.29f, 0.48f, 0.21f );
-	[Property, Change( "GenerateMesh" )] public Material TerrainMaterial { get; set; }
 	[Property, Change( "GenerateMesh" )] public Vector2 Offset { get; set; } = Vector2.Zero;
+	[Property, Change( "GenerateMesh" )] public Material Material { get; set; } = Material.Load( "materials/default/vertex_color.vmat" );
+	[Property, Change( "GenerateMesh" )] public Color Tint{ get; set; } = new Color();
 
-	protected override void OnEnabled()
+	protected override void OnValidate()
 	{
-		GenerateMesh(); 
+		GenerateMesh();
 	}
-
+	private SceneObject _sceneObject;
 	void GenerateMesh()
 	{
+		Log.Info( "Generating ground mesh" );
 		var grid = new Vector3[(Width + 1) * (Depth + 1)];
 
 		for (int x = 0; x <= Width; x++ )
@@ -57,10 +62,11 @@ public class LowPolyTerrain : Component
 		var mesh = new Mesh();
 		mesh.CreateVertexBuffer( vertices.Count, vertices.ToArray() );
 		mesh.CreateIndexBuffer( indices.Count, indices.ToArray() );
-		mesh.Material = Material.Load( "materials/default/vertex_color.vmat" );
+		mesh.Material = Material;
 
 		var mb = new ModelBuilder();
-		mb.AddMesh( mesh ); var collisionIndices = new List<int>();
+		mb.AddMesh( mesh ); 
+		var collisionIndices = new List<int>();
 
 		for ( int z = 0; z < Depth; z++ )
 		for ( int x = 0; x < Width; x++ )
@@ -77,7 +83,14 @@ public class LowPolyTerrain : Component
 		mb.AddCollisionMesh( grid, collisionIndices.ToArray() );
 
 		var model = mb.Create();
-		Components.GetOrCreate<ModelRenderer>().Model = model;
+
+		// Using SceneObject instead of ModelRenderer because the clutterer doesnt work with procedurally generated models when it is applied to one.
+		_sceneObject?.Delete();
+		_sceneObject = new SceneObject( Scene.SceneWorld, model );
+		_sceneObject.Transform = WorldTransform; 
+		_sceneObject.SetMaterialOverride( Material );
+		_sceneObject.ColorTint = Tint;
+
 		Components.GetOrCreate<ModelCollider>().Model = model;
 	}
 

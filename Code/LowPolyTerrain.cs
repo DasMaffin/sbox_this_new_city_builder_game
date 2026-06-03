@@ -8,7 +8,7 @@ using System.Runtime.InteropServices;
 using static Sandbox.PhysicsGroupDescription.BodyPart;
 
 [Title( "Low Poly Terrain" )]
-public class LowPolyTerrain : Component
+public class LowPolyTerrain : Component, Component.ExecuteInEditor
 {
 	[Property, Change("GenerateMesh")] public int Width { get; set; } = 20;
 	[Property, Change( "GenerateMesh" )] public int Depth { get; set; } = 20;
@@ -21,6 +21,17 @@ public class LowPolyTerrain : Component
 	[Property, Change( "GenerateMesh" )] public Material Material { get; set; } = Material.Load( "materials/default/vertex_color.vmat" );
 	[Property, Change( "GenerateMesh" )] public Color Tint{ get; set; } = new Color();
 
+	protected override void OnEnabled()
+	{
+		GenerateMesh();
+	}
+
+	protected override void OnDisabled()
+	{
+		_sceneObject?.Delete();
+		_sceneObject = null;
+	}
+
 	protected override void OnValidate()
 	{
 		GenerateMesh();
@@ -29,7 +40,7 @@ public class LowPolyTerrain : Component
 	void GenerateMesh()
 	{
 		Log.Info( "Generating ground mesh" );
-		var grid = new Vector3[(Width + 1) * (Depth + 1)];
+		Vector3[] grid = new Vector3[(Width + 1) * (Depth + 1)];
 
 		for (int x = 0; x <= Width; x++ )
 		{
@@ -42,8 +53,8 @@ public class LowPolyTerrain : Component
 			}
 		}
 
-		var vertices = new List<Vertex>();
-		var indices = new List<int>();
+		List<Vertex> vertices = new List<Vertex>();
+		List<int> indices = new List<int>();
 
 		for ( int z = 0; z < Depth; z++ )
 		{
@@ -59,14 +70,17 @@ public class LowPolyTerrain : Component
 			}
 		}
 
-		var mesh = new Mesh();
+		Mesh mesh = new Mesh();
 		mesh.CreateVertexBuffer( vertices.Count, vertices.ToArray() );
 		mesh.CreateIndexBuffer( indices.Count, indices.ToArray() );
-		mesh.Material = Material;
+		// Meshes now render via explicit sub-mesh draw calls. Setting mesh.Material alone
+		// no longer registers one, so post-update the terrain drew nothing — add a sub-mesh
+		// covering the whole index buffer instead.
+		mesh.AddSubMesh( Material, 0, indices.Count );
 
-		var mb = new ModelBuilder();
-		mb.AddMesh( mesh ); 
-		var collisionIndices = new List<int>();
+		ModelBuilder mb = new ModelBuilder();
+		mb.AddMesh( mesh );
+		List<int> collisionIndices = new List<int>();
 
 		for ( int z = 0; z < Depth; z++ )
 		for ( int x = 0; x < Width; x++ )
@@ -82,7 +96,7 @@ public class LowPolyTerrain : Component
 
 		mb.AddCollisionMesh( grid, collisionIndices.ToArray() );
 
-		var model = mb.Create();
+		Model model = mb.Create();
 
 		// Using SceneObject instead of ModelRenderer because the clutterer doesnt work with procedurally generated models when it is applied to one.
 		_sceneObject?.Delete();
@@ -96,15 +110,15 @@ public class LowPolyTerrain : Component
 
 	void AddFlatTri( List<Vertex> verts, List<int> indices, Vector3 v0, Vector3 v1, Vector3 v2 )
 	{
-		var normal = Vector3.Cross( v1 - v0, v2 - v0 ).Normal;
+		Vector3 normal = Vector3.Cross( v1 - v0, v2 - v0 ).Normal;
 		float dot = MathF.Max( 0f, Vector3.Dot( normal, Vector3.Up ) );
 		float shade = MathX.Lerp( 1f, dot, ShadingIntensity );
-		var col = new Color( TerrainColor.r * shade, TerrainColor.g * shade, TerrainColor.b * shade );
+		Color col = new Color( TerrainColor.r * shade, TerrainColor.g * shade, TerrainColor.b * shade );
 
 		int i = verts.Count;
 		verts.Add( new Vertex( v0, normal, new Vector4( 1, 0, 0, 1 ), Vector2.Zero ) { Color = col } );
 		verts.Add( new Vertex( v1, normal, new Vector4( 1, 0, 0, 1 ), Vector2.Zero ) { Color = col } );
 		verts.Add( new Vertex( v2, normal, new Vector4( 1, 0, 0, 1 ), Vector2.Zero ) { Color = col } );
-		indices.AddRange( new[] { i, i + 1, i + 2 } );
+		indices.AddRange( new int[] { i, i + 1, i + 2 } );
 	}
 }

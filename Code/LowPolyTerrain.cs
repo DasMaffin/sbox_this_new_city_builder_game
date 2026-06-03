@@ -1,11 +1,6 @@
-using Sandbox;
-using Sandbox.Mapping;
 using Sandbox.Utility;
 using System;
 using System.Collections.Generic;
-using System.IO;
-using System.Runtime.InteropServices;
-using static Sandbox.PhysicsGroupDescription.BodyPart;
 
 [Title( "Low Poly Terrain" )]
 public class LowPolyTerrain : Component, Component.ExecuteInEditor

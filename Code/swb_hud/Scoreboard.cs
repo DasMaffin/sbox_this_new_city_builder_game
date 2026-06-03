@@ -3,8 +3,6 @@ using Sandbox.UI.Construct;
 using SWB.Player;
 using SWB.Shared;
 using System;
-using System.Linq;
-using TNCBG;
 
 namespace SWB.HUD;
 

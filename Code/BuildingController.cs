@@ -1,4 +1,3 @@
-using SWB.Base;
 using SWB.Player;
 using SWB.Shared;
 using System;

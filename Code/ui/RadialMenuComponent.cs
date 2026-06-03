@@ -1,7 +1,5 @@
-using Sandbox.Rendering;
 using Sandbox.UI;
 using Sandbox.UI.Construct;
-using SWB.Demo;
 using SWB.Player;
 using SWB.Shared;
 
@@ -69,18 +67,18 @@ public class RadialMenuComponent : PanelComponent
 			firstTownhall.OnMousePressed -= PreviewBuilding;
 			container.RemovePolygon( firstTownhall );
 
-			var segment = new CircleSegment( 200f, 350f, 56f, 0f, Color.White, hoverColor: Color.Red );
+			var segment = new CircleSegment( 200f, 350f, 56f, 2f, Color.White, hoverColor: Color.Red );
 			container.AddPolygon( segment );
-			container.AddPolygon( new CircleSegment( 200f, 350f, 56, 60f, Color.White ) );
-			container.AddPolygon( new CircleSegment( 200f, 350f, 56f, 120f, Color.White ) );
-			container.AddPolygon( new CircleSegment( 200f, 350f, 56f, 180f, Color.White ) );
-			container.AddPolygon( new CircleSegment( 200f, 350f, 56f, 240f, Color.White ) );
-			container.AddPolygon( new CircleSegment( 200f, 350f, 56f, 300f, Color.White ) );
+			container.AddPolygon( new CircleSegment( 200f, 350f, 56, 62f, Color.White ) );
+			container.AddPolygon( new CircleSegment( 200f, 350f, 56f, 122f, Color.White ) );
+			container.AddPolygon( new CircleSegment( 200f, 350f, 56f, 182f, Color.White ) );
+			container.AddPolygon( new CircleSegment( 200f, 350f, 56f, 242f, Color.White ) );
+			container.AddPolygon( new CircleSegment( 200f, 350f, 56f, 302f, Color.White ) );
 			RadialState = 2;
 		}
 		else if(firstTownhall == null)
 		{
-			firstTownhall = new CircleSegment( 200f, 350f, 56f, 0f, Color.White, hoverColor: Color.Blue );
+			firstTownhall = new CircleSegment( 200f, 350f, 360f, 0f, Color.White, hoverColor: Color.Blue );
 			firstTownhall.OnMousePressed += PreviewBuilding;
 			container.AddPolygon( firstTownhall );
 		}

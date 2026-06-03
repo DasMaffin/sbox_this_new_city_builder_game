@@ -363,62 +363,7 @@
               "Storage": null
             }
           ],
-          "Children": [
-            {
-              "__guid": "994a8d16-347c-42bc-a88d-39ec73c38d93",
-              "__version": 2,
-              "__Prefab": "city stuff/rpgpp_lt/prefabs/nature/rpgpp_lt_tree_01.prefab",
-              "__PrefabInstancePatch": {
-                "AddedObjects": [],
-                "RemovedObjects": [],
-                "PropertyOverrides": [
-                  {
-                    "Target": {
-                      "Type": "GameObject",
-                      "IdValue": "98dfb455-398d-435a-bb3d-a0ee97438ab5"
-                    },
-                    "Property": "Tags",
-                    "Value": "foliage"
-                  }
-                ],
-                "MovedObjects": []
-              },
-              "__PrefabIdToInstanceId": {
-                "98dfb455-398d-435a-bb3d-a0ee97438ab5": "994a8d16-347c-42bc-a88d-39ec73c38d93",
-                "52c0e21b-a695-4688-a903-9ffc0b49bce1": "1e115c40-b561-44b6-9932-f7ccd1697a32",
-                "dbea572b-786a-4053-baae-48cee44f9d23": "6b2703e2-085a-45d0-ba05-26d66ac80b3e",
-                "fa607e62-b8ee-4bba-a157-e70be121d9e9": "bcbf07b7-84c5-40aa-bc93-1cad344cbd47",
-                "43e5f2d0-3918-4c3e-9d6d-25a78cc75294": "443ecaff-f501-4a9f-ba51-a1c40efa6965"
-              }
-            },
-            {
-              "__guid": "cef2df16-2367-4989-b5f2-dce546443995",
-              "__version": 2,
-              "__Prefab": "city stuff/rpgpp_lt/prefabs/nature/rpgpp_lt_tree_01.prefab",
-              "__PrefabInstancePatch": {
-                "AddedObjects": [],
-                "RemovedObjects": [],
-                "PropertyOverrides": [
-                  {
-                    "Target": {
-                      "Type": "GameObject",
-                      "IdValue": "98dfb455-398d-435a-bb3d-a0ee97438ab5"
-                    },
-                    "Property": "Tags",
-                    "Value": "foliage"
-                  }
-                ],
-                "MovedObjects": []
-              },
-              "__PrefabIdToInstanceId": {
-                "98dfb455-398d-435a-bb3d-a0ee97438ab5": "cef2df16-2367-4989-b5f2-dce546443995",
-                "52c0e21b-a695-4688-a903-9ffc0b49bce1": "a818c40f-b089-4790-8062-c92d243a21c7",
-                "dbea572b-786a-4053-baae-48cee44f9d23": "53e271d3-ec97-4f00-8fcf-eec5d070b5f4",
-                "fa607e62-b8ee-4bba-a157-e70be121d9e9": "42732fc8-b985-4b86-bba2-0b05efc8b35f",
-                "43e5f2d0-3918-4c3e-9d6d-25a78cc75294": "15836592-ab5a-45e7-aad9-959b64b7ea59"
-              }
-            }
-          ]
+          "Children": []
         },
         {
           "__guid": "98bd46c6-8109-4f1a-b1bb-7a209310421c",

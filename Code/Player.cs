@@ -1,5 +1,4 @@
 using System;
-using TNCBG;
 
 public class Player : Component, ILookTrace
 {
